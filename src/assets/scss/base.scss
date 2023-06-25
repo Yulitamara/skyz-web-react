@@ -1,5 +1,8 @@
 @import "./variables";
 @import "./navigation";
+@import "./blogs";
+@import "./masonry-post";
+@import "./post-masonry";
 
 *,
 *::before,
@@ -36,6 +39,27 @@ a {
     )
     [center-end] 1fr [container-end];
   grid-template-rows: 90vh repeat(9, min-content);
+}
+
+.row {
+  margin: 4em 20px;
+}
+
+.overlay::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 18%,
+    rgba(0, 0, 0, 0.8) 99%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
 /* Btns */

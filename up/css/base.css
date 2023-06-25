@@ -60,6 +60,26 @@
     display: flex;
   }
 }
+.blogs {
+  grid-column: container-start/container-end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15vh 4vw;
+  background-color: #f5f7f6;
+}
+
+.masonry-post {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.masonry {
+  display: grid;
+  gap: 30px;
+}
+
 *,
 *::before,
 *::after {
@@ -90,6 +110,21 @@ a {
   display: grid;
   grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 16.66667rem) [col-end]) [center-end] 1fr [container-end];
   grid-template-rows: 90vh repeat(9, min-content);
+}
+
+.row {
+  margin: 4em 20px;
+}
+
+.overlay::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 /* Btns */
