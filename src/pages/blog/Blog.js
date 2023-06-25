@@ -1,19 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import React from "react";
 
 const Blog = () => {
-  return (
-    <>
-      <Helmet>
-        <title>SkyzCRM</title>
-        <meta
-          name="description"
-          content="אתר הבלוגים של Skyz CRM"
-        ></meta>
-        <link rel="canonical" href="/בלוג"></link>
-      </Helmet>
-      <h1>Skyz Blog</h1>
-    </>
-  );
+  return <div>Blog</div>;
 };
 
 export default Blog;

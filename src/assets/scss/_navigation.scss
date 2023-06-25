@@ -1,0 +1,71 @@
+@import "./variables";
+
+.navbar {
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  position: fixed;
+  max-width: 1700px;
+  padding: 0 3rem;
+  background-color: $background;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  z-index: 99;
+
+  .anticon-menu {
+    font-size: 32px;
+    width: 65px;
+    cursor: pointer;
+    display: none;
+  }
+  img {
+    display: flex;
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-right: 30px;
+
+    .link {
+      cursor: pointer;
+      color: $text-color;
+    }
+    .link:hover {
+      color: $text-link;
+    }
+    .lang {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    .links {
+      width: 300px;
+      height: 100vh;
+      background-color: #eeefef;
+      position: absolute;
+      top: 65px;
+      left: -500px;
+      transition: 300ms ease left;
+      flex-direction: column;
+      align-items: start;
+      padding-left: 40px;
+      gap: 0.1rem;
+      &.active {
+        left: 0px;
+      }
+    }
+
+    .anticon-menu {
+      display: flex;
+    }
+  }
+}

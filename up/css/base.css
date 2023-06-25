@@ -1,0 +1,114 @@
+.navbar {
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  position: fixed;
+  max-width: 1700px;
+  padding: 0 3rem;
+  background-color: #f5f7f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  z-index: 99;
+}
+.navbar .anticon-menu {
+  font-size: 32px;
+  width: 65px;
+  cursor: pointer;
+  display: none;
+}
+.navbar img {
+  display: flex;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-right: 30px;
+}
+.navbar .links .link {
+  cursor: pointer;
+  color: #444;
+}
+.navbar .links .link:hover {
+  color: #2b74ba;
+}
+.navbar .links .lang {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar .links {
+    width: 300px;
+    height: 100vh;
+    background-color: #eeefef;
+    position: absolute;
+    top: 65px;
+    left: -500px;
+    transition: 300ms ease left;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 40px;
+    gap: 0.1rem;
+  }
+  .navbar .links.active {
+    left: 0px;
+  }
+  .navbar .anticon-menu {
+    display: flex;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.9;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.App {
+  max-width: 1700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 16.66667rem) [col-end]) [center-end] 1fr [container-end];
+  grid-template-rows: 90vh repeat(9, min-content);
+}
+
+/* Btns */
+.btns-container {
+  display: flex;
+  gap: 1rem;
+  z-index: 9;
+}
+
+.btn-primary {
+  font-size: 16px;
+  padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.btn-primary:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.333);
+}/*# sourceMappingURL=base.css.map */
