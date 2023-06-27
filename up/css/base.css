@@ -65,19 +65,94 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 15vh 4vw;
+  padding: 10vh 4vw;
   background-color: #f5f7f6;
+  height: 100%;
+}
+.blogs .featured-posts-container {
+  display: flex;
 }
 
+@media screen and (max-width: 900px) {
+  .blogs h2 {
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+  }
+  .blogs .featured-posts-container {
+    flex-direction: column;
+    display: grid;
+    margin-left: 0px;
+  }
+}
 .masonry-post {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  margin: 0 auto;
+  min-height: 225px;
+}
+.masonry-post .image-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.masonry-post .image-title,
+.masonry-post .image-date,
+.masonry-post .tags-container,
+.masonry-post div {
+  float: left;
+  width: 100%;
+  z-index: 10;
+  font-weight: 300;
+}
+.masonry-post .image-title {
+  font-size: 20px;
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  color: #fff;
+}
+.masonry-post .image-date {
+  font-size: 18px;
+  color: #999;
 }
 
+@media screen and (max-width: 900px) {
+  .masonry-post {
+    width: 100%;
+    margin: 10px 0;
+    height: 300px;
+  }
+}
 .masonry {
   display: grid;
   gap: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .masonry {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tags-container {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-left: -1px;
+  color: #fff;
+}
+.tags-container .tag {
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-right: 5px;
 }
 
 *,
@@ -109,7 +184,7 @@ a {
   margin: 0 auto;
   display: grid;
   grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 16.66667rem) [col-end]) [center-end] 1fr [container-end];
-  grid-template-rows: 90vh repeat(9, min-content);
+  grid-template-rows: repeat(9, min-content);
 }
 
 .row {

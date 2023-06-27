@@ -3,6 +3,24 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 15vh 4vw;
+  padding: 10vh 4vw;
   background-color: #f5f7f6;
+  height: 100%;
+  .featured-posts-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .blogs {
+    h2 {
+      margin-block-start: 1.5em;
+      margin-block-end: 1.5em;
+    }
+    .featured-posts-container {
+      flex-direction: column;
+      display: grid;
+      margin-left: 0px;
+    }
+  }
 }

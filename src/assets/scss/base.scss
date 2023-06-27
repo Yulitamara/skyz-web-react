@@ -3,6 +3,8 @@
 @import "./blogs";
 @import "./masonry-post";
 @import "./post-masonry";
+@import "./tag-row";
+@import "./post-grid";
 
 *,
 *::before,
@@ -38,7 +40,7 @@ a {
       [col-start] minmax(min-content, 16.66667rem) [col-end]
     )
     [center-end] 1fr [container-end];
-  grid-template-rows: 90vh repeat(9, min-content);
+  grid-template-rows: repeat(9, min-content);
 }
 
 .row {
