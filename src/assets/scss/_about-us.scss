@@ -1,0 +1,25 @@
+@import "./variables";
+
+.about-us {
+  grid-column: container-start / container-end;
+  padding: 20vh 4vw;
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+  color: $text-color;
+  p {
+    text-align: left;
+    text-align: justify;
+  }
+  img {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    img {
+      max-width: 200px;
+      align-self: center;
+    }
+  }
+}

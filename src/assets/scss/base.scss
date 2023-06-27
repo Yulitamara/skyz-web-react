@@ -3,6 +3,8 @@
 @import "./blogs";
 @import "./about";
 @import "./hero";
+@import "./products";
+@import "./about-us";
 
 *,
 *::before,
@@ -29,6 +31,27 @@ a {
   color: black;
 }
 
+h1 {
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: calc(1.5rem + 0.9vw);
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+h3 {
+  font-size: calc(1rem + 0.9vw);
+  letter-spacing: 0.1rem;
+}
+p {
+  font-size: calc(1.2rem + 0.4vw);
+  text-align: center;
+  font-weight: 200;
+}
+
 .App {
   max-width: 1700px;
   margin: 0 auto;
@@ -40,27 +63,6 @@ a {
     )
     [center-end] 1fr [container-end];
   grid-template-rows: repeat(9, min-content);
-}
-
-.row {
-  margin: 4em 20px;
-}
-
-.overlay::before {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    transparent 18%,
-    rgba(0, 0, 0, 0.8) 99%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
 }
 
 /* Btns */

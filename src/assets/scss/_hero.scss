@@ -7,30 +7,24 @@
   padding: 20vh 4vw;
   background-color: #f5f7f6;
   min-height: 90vh;
-}
 
-h1 {
-  font-size: 42px;
-  font-weight: 300;
-  letter-spacing: -0.05em;
-}
+  h1.span {
+    letter-spacing: normal;
+    padding-left: 3px;
+  }
 
-h1.span {
-  letter-spacing: normal;
-  padding-left: 3px;
-}
+  p {
+    font-size: 28px;
+    font-weight: 200;
+    margin-bottom: calc(1rem + 2vw);
+  }
 
-p {
-  font-size: 28px;
-  font-weight: 200;
-  margin-bottom: calc(1rem + 2vw);
-}
-
-p .dot {
-  background-color: #ff917a;
-  width: 9px;
-  height: 9px;
-  margin-top: 5px;
-  border-radius: 50%;
-  display: inline-block;
+  p .dot {
+    background-color: #ff917a;
+    width: 9px;
+    height: 9px;
+    margin-top: 5px;
+    border-radius: 50%;
+    display: inline-block;
+  }
 }
