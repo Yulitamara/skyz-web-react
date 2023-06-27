@@ -84,75 +84,60 @@
     margin-left: 0px;
   }
 }
-.masonry-post {
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  margin: 0 auto;
-  min-height: 225px;
-}
-.masonry-post .image-text {
-  height: 100%;
-  width: 100%;
+.about {
+  grid-column: container-start/container-end;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  box-sizing: border-box;
+  align-items: center;
+  padding: 5rem;
 }
-.masonry-post .image-title,
-.masonry-post .image-date,
-.masonry-post .tags-container,
-.masonry-post div {
-  float: left;
-  width: 100%;
-  z-index: 10;
+
+h2 {
+  font-size: calc(1.5rem + 0.9vw);
   font-weight: 300;
-}
-.masonry-post .image-title {
-  font-size: 20px;
-  margin-block-start: 0;
-  margin-block-end: 10px;
-  color: #fff;
-}
-.masonry-post .image-date {
-  font-size: 18px;
-  color: #999;
+  letter-spacing: 0.1rem;
 }
 
-@media screen and (max-width: 900px) {
-  .masonry-post {
-    width: 100%;
-    margin: 10px 0;
-    height: 300px;
-  }
-}
-.masonry {
-  display: grid;
-  gap: 30px;
+p {
+  font-size: calc(1.2rem + 0.4vw);
+  text-align: center;
 }
 
-@media screen and (max-width: 900px) {
-  .masonry {
-    display: flex;
-    flex-direction: column;
-  }
+.hero {
+  grid-column: container-start/container-end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20vh 4vw;
+  background-color: #f5f7f6;
+  min-height: 90vh;
 }
-.tags-container {
-  font-size: 12px;
-  font-weight: 500;
-  margin-bottom: 15px;
-  margin-left: -1px;
-  color: #fff;
+
+h1 {
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: -0.05em;
 }
-.tags-container .tag {
-  border-radius: 5px;
-  padding: 4px 8px;
-  margin-right: 5px;
+
+h1.span {
+  letter-spacing: normal;
+  padding-left: 3px;
+}
+
+p {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: calc(1rem + 2vw);
+}
+
+p .dot {
+  background-color: #ff917a;
+  width: 9px;
+  height: 9px;
+  margin-top: 5px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 *,
@@ -176,6 +161,7 @@ html body {
 
 a {
   text-decoration: none;
+  font-size: 16px;
   color: black;
 }
 

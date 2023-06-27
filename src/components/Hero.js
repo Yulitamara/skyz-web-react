@@ -1,4 +1,6 @@
-import "./hero.css";
+import "../assets/scss/_hero.scss";
+import "../assets/scss/base.scss";
+
 
 const Hero = () => {
   return (

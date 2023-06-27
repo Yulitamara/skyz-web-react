@@ -1,4 +1,5 @@
-import "./about.css";
+import "../assets/scss/_about.scss";
+import "../assets/scss/base.scss";
 
 const About = () => {
   return (
