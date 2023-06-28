@@ -174,6 +174,385 @@
   }
 }
 
+.footer {
+  grid-column: container-start/container-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  height: 52px;
+  border-top: 1px solid #f2f2f2;
+}
+.footer p {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+.login {
+  grid-column: container-start/container-end;
+  border-top: 1px solid #cecece;
+  padding: 20vh 4vw;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .content {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #3c4043;
+  gap: 4rem;
+}
+.login .content .form {
+  background-color: #d6e2db;
+  color: #3c4043;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.login .content .form .fields {
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+.login .content .form .btn {
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+}
+.login .content .form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  gap: 5px;
+}
+.login .content .form .form-control label {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login .content .form .form-control label input[type=checkbox].checkbox-login {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 5px 0;
+  cursor: pointer;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.9px solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+.login .content .form .form-control label input[type=checkbox].checkbox-login::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  background-color: #3c4043;
+}
+.login .content .form .form-control label input[type=checkbox].checkbox-login:checked::before {
+  transform: scale(1);
+}
+.login .content .form .form-control label input[type=checkbox].checkbox-login:focus {
+  /* outline: max(2px, 0.15em) solid currentColor; */
+  outline-offset: max(2px, 0.15em);
+}
+.login .content .form .form-control a {
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  letter-spacing: 0;
+}
+.login .content .form .login-options {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 10px;
+  width: 100%;
+}
+.login .content .form .login-options h4 {
+  font-weight: 400;
+  font-size: font-size(font-size-small);
+  position: relative;
+  text-align: center;
+}
+.login .content .form .login-options h4::before {
+  content: "";
+  display: block;
+  width: 28%;
+  height: 1.5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.login .content .form .login-options h4::after {
+  content: "";
+  display: block;
+  width: 28%;
+  height: 1.5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.login .content .form .login-options .img-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  height: 47.25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login .content .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login .content .info h3 {
+  font-weight: 300;
+  letter-spacing: -0.07em;
+}
+.login .content .info h3 span {
+  letter-spacing: normal;
+  padding-left: 3px;
+}
+.login .content .info .btn {
+  align-self: center;
+  margin-top: 5rem;
+}
+.login .content .info img {
+  margin-top: 12rem;
+  width: 300px;
+}
+@media screen and (max-width: 900px) {
+  .login .content {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+  }
+  .login .content .info {
+    text-align: center;
+  }
+  .login .content .info .btn {
+    margin-top: 2rem;
+  }
+  .login .content .info img {
+    align-self: center;
+    margin-top: 3rem;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .login .content {
+    width: 100%;
+  }
+  .login .content .info img {
+    width: 150px;
+  }
+}
+
+input[type=text],
+input[type=password],
+input[type=number] {
+  box-sizing: border-box;
+  border: none;
+  padding: 0 0.5rem;
+  font-size: 14px;
+  color: #3c4043;
+  background-color: transparent;
+  width: 100%;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+textarea {
+  outline: none !important;
+}
+
+.field-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+.textarea .title {
+  font-size: 16px;
+  margin: 0.5rem;
+  letter-spacing: 1px;
+}
+.textarea textarea {
+  height: 200px;
+  resize: none;
+  padding: 10px;
+  font-size: font-size(font-size-small);
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.field-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-container {
+  background-color: #fff;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  height: 5rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.label-container .label-icon,
+.label-container .label-text,
+.label-container .rquired {
+  font-size: 22px;
+}
+
+.label-container .rquired {
+  color: rgb(131, 47, 47);
+}
+
+.input-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+  border-radius: 0 5px 5px 0;
+  padding-left: 1rem;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+}
+
+.input-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4eff4;
+}
+
+.input-type .input-type-text,
+.input-type .input-icon {
+  padding: 0.2rem 0.5rem;
+}
+
+.contact {
+  grid-column: container-start/container-end;
+  border-top: 1px solid #cecece;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20vh 4vw;
+}
+.contact .content {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #3c4043;
+  gap: 4rem;
+}
+.contact .content .info {
+  display: flex;
+  flex-direction: column;
+}
+.contact .content .info p {
+  text-align: start;
+}
+.contact .content .info .info-details {
+  margin-top: 2rem;
+}
+.contact .content .info .info-details .detail {
+  margin: 0.7rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 0.7rem;
+}
+.contact .content .info .info-details .detail .contact-icon {
+  width: 28px;
+}
+.contact .content .info .info-img {
+  margin-top: 4rem;
+}
+.contact .content .info .info-img img {
+  width: 350px;
+}
+.contact .content .form {
+  background-color: #d6e2db;
+  color: #3c4043;
+  border-radius: 30px;
+  padding: 2rem;
+  min-width: 400px;
+}
+.contact .content .form .btn {
+  margin-top: 2rem;
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .contact .content {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+  }
+  .contact .content .info {
+    align-items: center;
+  }
+  .contact .content .info .info-img {
+    margin-top: 3rem;
+  }
+  .contact .content .info .info-img img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contact .content {
+    width: 100%;
+  }
+  .contact .content .form {
+    min-width: 0px;
+  }
+  .contact .content .info img {
+    width: 150px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -249,4 +628,21 @@ p {
 
 .btn-primary:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.333);
+}
+
+.btn-secondary {
+  font-size: calc(1.2rem + 0.4vw);
+  padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #3c4043;
+  background-color: #d6e2db;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  color: #d6e2db;
+  background-color: #3c4043;
 }/*# sourceMappingURL=base.css.map */
