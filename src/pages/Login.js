@@ -2,6 +2,7 @@ import googleImg from "../assets/imgs/login/google.png";
 import microsoftImg from "../assets/imgs/login/microsoft.png";
 import facebookImg from "../assets/imgs/login/facebook.png";
 import compterWoman from "../assets/imgs/undraw_dev_focus_re_6iwt.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -42,7 +43,7 @@ const Login = () => {
               <input type="checkbox" className="checkbox-login" />
               Remember me
             </label>
-            <a>Privacy Policy</a>
+            <Link to="/privacy">Privacy Policy</Link>
             <a>Forgot Password?</a>
           </div>
           <div className="login-options">
