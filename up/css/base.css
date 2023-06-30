@@ -132,6 +132,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 3vh;
   background-color: #fff0eb;
   padding: 2rem;
@@ -646,7 +647,7 @@ p {
 .btn-primary {
   font-size: 16px;
   padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
-  border: 2px solid;
+  border: 1.4px solid;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -672,4 +673,18 @@ p {
 .btn-secondary:hover {
   color: #d6e2db;
   background-color: #3c4043;
+}
+
+.features {
+  grid-column: container-start/container-end;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 20vh 0;
+}
+.features .right {
+  padding-left: 20rem;
+}
+.features .left img {
+  width: 400px;
 }/*# sourceMappingURL=base.css.map */

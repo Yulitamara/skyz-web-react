@@ -41,7 +41,9 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        <span className="link darkmode-toggle">moon</span>
+        <span className="material-symbols-outlined darkmode-toggle">
+          dark_mode
+        </span>
         <div className="lang">
           <span className="link">
             <b>He</b>

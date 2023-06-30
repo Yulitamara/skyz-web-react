@@ -11,7 +11,6 @@
 @import "./contact";
 @import "./privacy-policy";
 
-
 *,
 *::before,
 *::after {
@@ -81,7 +80,7 @@ p {
 .btn-primary {
   font-size: 16px;
   padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
-  border: 2px solid;
+  border: 1.4px solid;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -106,4 +105,23 @@ p {
 .btn-secondary:hover {
   color: #d6e2db;
   background-color: #3c4043;
+}
+
+// just for now
+.features {
+  grid-column: container-start / container-end;
+  display: flex;
+  // flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10rem;
+  padding: 20vh 0;
+
+  .right {
+    padding-left: 20rem;
+  }
+  .left {
+    img {
+      width: 400px;
+    }
+  }
 }
