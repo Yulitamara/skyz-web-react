@@ -23,7 +23,10 @@ const Marketing = () => {
                 a complete, clear picture from the time you send your campaign
                 out to receiving leads to the final stage of customer sales.
               </p>
-              <Link to="/products/skyz-sales/lead-management/" className="link">
+              <Link
+                to="/products/skyz-marketing/email-campaign-management/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -37,7 +40,7 @@ const Marketing = () => {
                 client relationships.
               </p>
               <Link
-                to="/products/skyz-sales/opportunity-management/"
+                to="/products/skyz-marketing/mobile-campaign-management/"
                 className="link"
               >
                 Learn More...
@@ -60,7 +63,7 @@ const Marketing = () => {
                 from the system as well and accrue more loyal customers.
               </p>
               <Link
-                to="/products/skyz-sales/contact-management/"
+                to="/products/skyz-marketing/social-campaign-management/"
                 className="link"
               >
                 Learn More...
@@ -77,7 +80,7 @@ const Marketing = () => {
                 and increase revenue.
               </p>
               <Link
-                to="/products/skyz-sales/meetings-management/"
+                to="/products/skyz-marketing/database-management/"
                 className="link"
               >
                 Learn More...
@@ -100,7 +103,7 @@ const Marketing = () => {
                 through up selling and cross selling.
               </p>
               <Link
-                to="/products/skyz-sales/skyz-sales-cloud/"
+                to="/products/skyz-marketing/customer-clubs/"
                 className="link"
               >
                 Learn More...
@@ -119,7 +122,7 @@ const Marketing = () => {
                 tailored to your marketing needs.
               </p>
               <Link
-                to="/products/skyz-sales/skyz-sales-mobile/"
+                to="/products/skyz-marketing/generate-customer-details/"
                 className="link"
               >
                 Learn More...
@@ -135,7 +138,10 @@ const Marketing = () => {
                 phones. Give the customer the positive feeling that he/she is
                 part of a family that cares.
               </p>
-              <Link to="/products/skyz-sales/sales-workflow/" className="link">
+              <Link
+                to="/products/skyz-marketing/customizable-information-analysis/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -158,7 +164,7 @@ const Marketing = () => {
                 improve your position during negotiations with the customer.
               </p>
               <Link
-                to="/products/skyz-sales/information-sharing/"
+                to="/products/skyz-marketing/information-sharing/"
                 className="link"
               >
                 Learn More...
@@ -175,7 +181,7 @@ const Marketing = () => {
                 to sharpen marketing decisions about your products and services.
               </p>
               <Link
-                to="/products/skyz-sales/calendar-sharing/"
+                to="/products/skyz-marketing/social-sharing/"
                 className="link"
               >
                 Learn More...
@@ -199,7 +205,10 @@ const Marketing = () => {
                 trends and improvements and allow for better planning for future
                 campaigns.
               </p>
-              <Link to="/products/skyz-sales/forecast-sales/" className="link">
+              <Link
+                to="/products/skyz-marketing/campaign-optimization/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -214,7 +223,7 @@ const Marketing = () => {
                 optimal distribution of your marketing budget.
               </p>
               <Link
-                to="/products/skyz-sales/reports-and-dashboards/"
+                to="/products/skyz-marketing/marketing-control/"
                 className="link"
               >
                 Learn More...
@@ -231,7 +240,7 @@ const Marketing = () => {
                 focus and maximizing new business.
               </p>
               <Link
-                to="/products/skyz-sales/reports-and-dashboards/"
+                to="/products/skyz-marketing/maximizing-new-customers/"
                 className="link"
               >
                 Learn More...
@@ -255,7 +264,10 @@ const Marketing = () => {
                 hour into a work hour. Extract data in the field and analyze,
                 while making decisions in real time.
               </p>
-              <Link to="/products/skyz-sales/forecast-sales/" className="link">
+              <Link
+                to="/products/skyz-marketing/field-based-marketing-management/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -270,7 +282,7 @@ const Marketing = () => {
                 Marketing from the office or in the field, in real time.
               </p>
               <Link
-                to="/products/skyz-sales/reports-and-dashboards/"
+                to="/products/skyz-marketing/marketing-automation/"
                 className="link"
               >
                 Learn More...
@@ -288,7 +300,7 @@ const Marketing = () => {
                 anywhere.
               </p>
               <Link
-                to="/products/skyz-sales/reports-and-dashboards/"
+                to="/products/skyz-marketing/reports-and-dashboards/"
                 className="link"
               >
                 Learn More...
