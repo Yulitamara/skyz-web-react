@@ -18,7 +18,7 @@ const Products = () => {
           management, contacts, sales people, transaction management and smart
           reports.
         </p>
-        <Link to="/sales">
+        <Link to="/products/skyz-sales/sales/">
           <button className="btn-primary">Learn More</button>
         </Link>
       </div>
