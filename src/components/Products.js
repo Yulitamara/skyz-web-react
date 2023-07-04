@@ -31,7 +31,9 @@ const Products = () => {
           Proactively expand your customer base. Manage and follow your
           campaigns via e-mail, mobile and social networks.
         </p>
-        <button className="btn-primary">Learn More</button>
+        <Link to="/products/skyz-marketing/marketing/">
+          <button className="btn-primary">Learn More</button>
+        </Link>
       </div>
       <div className="product">
         <div className="header">
@@ -43,7 +45,9 @@ const Products = () => {
           processes at a glance and manage them effectively until they are
           successfully completed.
         </p>
-        <button className="btn-primary">Learn More</button>
+        <Link to="/products/skyz-service/service/">
+          <button className="btn-primary">Learn More</button>
+        </Link>
       </div>
     </section>
   );

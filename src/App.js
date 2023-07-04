@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Navbar from "./components/Navbar";
@@ -25,11 +27,15 @@ import CalendarSharing from "./pages/products/sales/CalendarSharing";
 import SocialSharing from "./pages/products/sales/SocialSharing";
 import ForecastSales from "./pages/products/sales/ForecastSales";
 import ReportsAndDashboards from "./pages/products/sales/ReportsAndDashboards";
+// Marketing
+import Marketing from "./pages/products/marketing/Marketing";
+import Service from "./pages/products/service/Service";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -98,6 +104,15 @@ function App() {
           <Route
             path="/products/skyz-sales/reports-and-dashboards/"
             element={<ReportsAndDashboards />}
+          />
+          <Route
+            path="/products/skyz-marketing/marketing/"
+            element={<Marketing />}
+          />
+
+          <Route
+            path="/products/skyz-service/service/"
+            element={<Service />}
           />
         </Routes>
         <Footer />
