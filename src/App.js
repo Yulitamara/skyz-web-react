@@ -27,9 +27,22 @@ import CalendarSharing from "./pages/products/sales/CalendarSharing";
 import SocialSharing from "./pages/products/sales/SocialSharing";
 import ForecastSales from "./pages/products/sales/ForecastSales";
 import ReportsAndDashboards from "./pages/products/sales/ReportsAndDashboards";
+
+
+// Srvice
+import Service from "./pages/products/service/Service";
+
 // Marketing
 import Marketing from "./pages/products/marketing/Marketing";
-import Service from "./pages/products/service/Service";
+import CampaignOptimization from "./pages/products/marketing/CampaignOptimization";
+import CustomerClubs from "./pages/products/marketing/CustomerClubs";
+import CustomizableInformationAnalysis from "./pages/products/marketing/CustomizableInformationAnalysis";
+import DatabaseManagement from "./pages/products/marketing/DatabaseManagement";
+import EmailCampaignManagement from "./pages/products/marketing/EmailCampaignManagement";
+import FieldBasedMarketingManagement from "./pages/products/marketing/FieldBasedMarketingManagement";
+import GenerateCustomerDetails from "./pages/products/marketing/GenerateCustomerDetails";
+import InformationSharing from "./pages/products/marketing/InformationSharing";
+
 
 function App() {
   return (
@@ -44,6 +57,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+
+          {/* Sales */}
           <Route path="/products/skyz-sales/sales/" element={<Sales />} />
           <Route
             path="/products/skyz-sales/lead-management/"
@@ -105,15 +120,47 @@ function App() {
             path="/products/skyz-sales/reports-and-dashboards/"
             element={<ReportsAndDashboards />}
           />
+
+          {/* Marketing */}
           <Route
             path="/products/skyz-marketing/marketing/"
             element={<Marketing />}
           />
-
           <Route
-            path="/products/skyz-service/service/"
-            element={<Service />}
+            path="/products/skyz-marketing/campaign-optimization/"
+            element={<CampaignOptimization />}
           />
+          <Route
+            path="/products/skyz-marketing/customer-clubs/"
+            element={<CustomerClubs />}
+          />
+          <Route
+            path="/products/skyz-marketing/customizable-information-analysis/"
+            element={<CustomizableInformationAnalysis />}
+          />
+          <Route
+            path="/products/skyz-marketing/database-management/"
+            element={<DatabaseManagement />}
+          />
+          <Route
+            path="/products/skyz-marketing/email-campaign-management/"
+            element={<EmailCampaignManagement />}
+          />
+          <Route
+            path="/products/skyz-marketing/field-based-marketing-management/"
+            element={<FieldBasedMarketingManagement />}
+          />
+          <Route
+            path="/products/skyz-marketing/generate-customer-details/"
+            element={<GenerateCustomerDetails />}
+          />
+          <Route
+            path="/products/skyz-marketing/information-sharing/"
+            element={<InformationSharing />}
+          />
+
+          {/* Service */}
+          <Route path="/products/skyz-service/service/" element={<Service />} />
         </Routes>
         <Footer />
       </Router>
