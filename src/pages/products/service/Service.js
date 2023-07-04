@@ -26,7 +26,10 @@ const Service = () => {
                 of your service dynamic at any point in time. Give customers the
                 efficient response they expect, improving satisfaction.
               </p>
-              <Link to="/products/skyz-sales/lead-management/" className="link">
+              <Link
+                to="/products/skyz-service/customer-service-calls-mgmt/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -43,7 +46,7 @@ const Service = () => {
                 avoided.
               </p>
               <Link
-                to="/products/skyz-sales/opportunity-management/"
+                to="/products/skyz-service/customer-service-events-mgmt/"
                 className="link"
               >
                 Learn More...
@@ -60,7 +63,7 @@ const Service = () => {
                 personnel easily, without restrictions.
               </p>
               <Link
-                to="/products/skyz-sales/opportunity-management/"
+                to="/products/skyz-service/tasks-management/"
                 className="link"
               >
                 Learn More...
@@ -84,7 +87,7 @@ const Service = () => {
                 Get two-way alerts before starting a contractual engagement.
               </p>
               <Link
-                to="/products/skyz-sales/contact-management/"
+                to="/products/skyz-service/service-level-agreement-sla/"
                 className="link"
               >
                 Learn More...
@@ -103,7 +106,7 @@ const Service = () => {
                 problems and recording the level of customer satisfaction.
               </p>
               <Link
-                to="/products/skyz-sales/meetings-management/"
+                to="/products/skyz-service/field-based-service-mgmt/"
                 className="link"
               >
                 Learn More...
@@ -120,7 +123,7 @@ const Service = () => {
                 conclusions with your team and improve overall service quality.
               </p>
               <Link
-                to="/products/skyz-sales/meetings-management/"
+                to="/products/skyz-service/customer-service-performance-mgmt/"
                 className="link"
               >
                 Learn More...
@@ -144,7 +147,7 @@ const Service = () => {
                 service.
               </p>
               <Link
-                to="/products/skyz-sales/skyz-sales-cloud/"
+                to="/products/skyz-service/customer-service-information-mgmt/"
                 className="link"
               >
                 Learn More...
@@ -162,7 +165,7 @@ const Service = () => {
                 meetings and multi-participant sessions within the system.
               </p>
               <Link
-                to="/products/skyz-sales/skyz-sales-mobile/"
+                to="/products/skyz-service/share-calendars/"
                 className="link"
               >
                 Learn More...
@@ -188,7 +191,7 @@ const Service = () => {
                 time.
               </p>
               <Link
-                to="/products/skyz-sales/information-sharing/"
+                to="/products/skyz-service/social-customer-service/"
                 className="link"
               >
                 Learn More...
@@ -207,7 +210,7 @@ const Service = () => {
                 themselves by gaining access to your public knowledge portal.
               </p>
               <Link
-                to="/products/skyz-sales/calendar-sharing/"
+                to="/products/skyz-service/sharing-knowledge/"
                 className="link"
               >
                 Learn More...
@@ -239,7 +242,10 @@ const Service = () => {
                 <br />
                 5. A complete solution for an attractive monthly cost (SAAS).
               </p>
-              <Link to="/products/skyz-sales/forecast-sales/" className="link">
+              <Link
+                to="/products/skyz-service/skyz-service-cloud/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -254,7 +260,7 @@ const Service = () => {
                 including print capability.
               </p>
               <Link
-                to="/products/skyz-sales/reports-and-dashboards/"
+                to="/products/skyz-service/skyz-service-mobile/"
                 className="link"
               >
                 Learn More...
@@ -278,7 +284,10 @@ const Service = () => {
                 processes. Make adjustments as needed in real time and reduce
                 unnecessary delays in service, improving effectiveness.
               </p>
-              <Link to="/products/skyz-sales/forecast-sales/" className="link">
+              <Link
+                to="/products/skyz-service/customer-service-workflow/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -294,7 +303,7 @@ const Service = () => {
                 visits, new service innovations and satisfaction surveys.
               </p>
               <Link
-                to="/products/skyz-sales/reports-and-dashboards/"
+                to="/products/skyz-service/email-integration/"
                 className="link"
               >
                 Learn More...
@@ -319,7 +328,10 @@ const Service = () => {
                 and make any adjustments and improvements as needed. Keep your
                 finger on the pulse of the service organization.
               </p>
-              <Link to="/products/skyz-sales/forecast-sales/" className="link">
+              <Link
+                to="/products/skyz-service/customer-service-control/"
+                className="link"
+              >
                 Learn More...
               </Link>
             </div>
@@ -334,7 +346,7 @@ const Service = () => {
                 complex event in the field.
               </p>
               <Link
-                to="/products/skyz-sales/reports-and-dashboards/"
+                to="/products/skyz-service/reports-and-dashboards/"
                 className="link"
               >
                 Learn More...
