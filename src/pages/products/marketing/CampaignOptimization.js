@@ -4,12 +4,14 @@ const paraData = [
   {
     id: 1,
     title: "Measure and analyze campaign results in real time",
-    content: "Manage your company marketing campaigns easily and effectively, measuring and comparing results using Skyz Marketing. Define and compare variables such as leads coming from a campaign, opportunities created, sales that closed, company size and location. Compare the data in one program in order to draw conclusions that benefit the organization.",
+    content:
+      "Manage your company marketing campaigns easily and effectively, measuring and comparing results using Skyz Marketing. Define and compare variables such as leads coming from a campaign, opportunities created, sales that closed, company size and location. Compare the data in one program in order to draw conclusions that benefit the organization.",
   },
   {
     id: 2,
     title: "Get insights into customer trends and market direction",
-    content: "Gain insights from your marketing data in real time. Use the data to create charts and graphs – to illustrate trends in a simple yet elegant way. Share concerns among your department staff and determine the course of action for future advertising campaigns.",
+    content:
+      "Gain insights from your marketing data in real time. Use the data to create charts and graphs – to illustrate trends in a simple yet elegant way. Share concerns among your department staff and determine the course of action for future advertising campaigns.",
   },
 ];
 

@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet-async";
 import "../assets/scss/_blogs.scss";
 import "../assets/scss/base.scss";
-import img1 from "../assets/imgs/blogs/1.jpg";
+import Blog from "../components/Blog";
 
 // import Filters from "../components/Filters";
 
 const Blogs = () => {
+
   return (
     <section dir="rtl" className="blogs">
       <Helmet>
@@ -23,71 +24,7 @@ const Blogs = () => {
       </p>
       {/* <Filters /> */}
       <div className="blogs-container">
-        <div className="blog">
-          <h3 className="blog-title">
-            האם כדאי להעדיף את מודל ה- Cloud CRM על פני On-Premise CRM ו-Hybrid
-            CRM?
-          </h3>
-          <div className="img-container">
-            <img src={img1} />
-          </div>
-          <p>
-            לפני שנתחיל בהשוואה בין 3 מודלי העבודה של מערכות לניהול קשרי לקוחות,
-            נסביר בקצרה על כל אחד מהם: Cloud crm...
-          </p>
-        </div>
-        <div className="blog">
-          <h3 className="blog-title">
-            האם כדאי להעדיף את מודל ה- Cloud CRM על פני On-Premise CRM ו-Hybrid
-            CRM?
-          </h3>
-          <div className="img-container">
-            <img src={img1} />
-          </div>
-          <p>
-            לפני שנתחיל בהשוואה בין 3 מודלי העבודה של מערכות לניהול קשרי לקוחות,
-            נסביר בקצרה על כל אחד מהם: Cloud crm...
-          </p>
-        </div>
-        <div className="blog">
-          <h3 className="blog-title">
-            האם כדאי להעדיף את מודל ה- Cloud CRM על פני On-Premise CRM ו-Hybrid
-            CRM?
-          </h3>
-          <div className="img-container">
-            <img src={img1} />
-          </div>
-          <p>
-            לפני שנתחיל בהשוואה בין 3 מודלי העבודה של מערכות לניהול קשרי לקוחות,
-            נסביר בקצרה על כל אחד מהם: Cloud crm...
-          </p>
-        </div>
-        <div className="blog">
-          <h3 className="blog-title">
-            האם כדאי להעדיף את מודל ה- Cloud CRM על פני On-Premise CRM ו-Hybrid
-            CRM?
-          </h3>
-          <div className="img-container">
-            <img src={img1} />
-          </div>
-          <p>
-            לפני שנתחיל בהשוואה בין 3 מודלי העבודה של מערכות לניהול קשרי לקוחות,
-            נסביר בקצרה על כל אחד מהם: Cloud crm...
-          </p>
-        </div>
-        <div className="blog">
-          <h3 className="blog-title">
-            האם כדאי להעדיף את מודל ה- Cloud CRM על פני On-Premise CRM ו-Hybrid
-            CRM?
-          </h3>
-          <div className="img-container">
-            <img src={img1} />
-          </div>
-          <p>
-            לפני שנתחיל בהשוואה בין 3 מודלי העבודה של מערכות לניהול קשרי לקוחות,
-            נסביר בקצרה על כל אחד מהם: Cloud crm...
-          </p>
-        </div>
+        <Blog />
       </div>
     </section>
   );

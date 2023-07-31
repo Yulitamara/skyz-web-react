@@ -17,10 +17,10 @@ const navLinks = [
     title: "Login",
     path: "/login",
   },
-  {
-    title: "Blog",
-    path: "/blogs",
-  },
+  // {
+  //   title: "Blog",
+  //   path: "/blogs",
+  // },
   {
     title: "Contact",
     path: "/contact",
@@ -41,15 +41,15 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        <span className="material-symbols-outlined darkmode-toggle">
+        {/* <span className="material-symbols-outlined darkmode-toggle">
           dark_mode
-        </span>
-        <div className="lang">
+        </span> */}
+        {/* <div className="lang">
           <span className="link">
             <b>He</b>
           </span>
           <span className="link">En</span>
-        </div>
+        </div> */}
       </div>
       <MenuOutlined onClick={() => setMenuActive(!menuActive)} />
     </header>

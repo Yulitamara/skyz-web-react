@@ -6,3 +6,9 @@
   padding: 5rem;
   background-color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 5rem 2rem;
+  }
+}

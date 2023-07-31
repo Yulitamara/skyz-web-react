@@ -54,7 +54,9 @@
       border-radius: 30px;
       padding: 2rem;
       min-width: 400px;
-
+      h2 {
+        padding-bottom: 1rem;
+      }
       .btn {
         margin-top: 2rem;
         width: 100%;
@@ -81,11 +83,16 @@
     }
   }
   @media screen and (max-width: 550px) {
+    padding: 20vh 0;
+
     .content {
       width: 100%;
+
       .form {
         min-width: 0px;
+        border-radius: 0;
       }
+
       .info {
         img {
           width: 150px;
