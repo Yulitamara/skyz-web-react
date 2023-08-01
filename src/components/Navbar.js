@@ -15,7 +15,7 @@ const navLinks = [
   },
   {
     title: "Login",
-    path: "/login",
+    path: "https://crm-erp.co.il/planc2/logon/?lang=102",
   },
   // {
   //   title: "Blog",

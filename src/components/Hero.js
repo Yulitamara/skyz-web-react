@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../assets/scss/_hero.scss";
 import "../assets/scss/base.scss";
-
+import heroImg from "../assets/imgs/hero-img.svg";
 
 const Hero = () => {
   return (
@@ -20,6 +20,7 @@ const Hero = () => {
           Login
         </Link>
       </div>
+      <img src={heroImg} alt="hero-img" className="hero-img" />
     </section>
   );
 };

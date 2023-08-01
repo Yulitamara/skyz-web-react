@@ -30,6 +30,7 @@
 .navbar .links .link {
   cursor: pointer;
   color: #444;
+  transition: all 0.3s ease-in-out;
 }
 .navbar .links .link:hover {
   color: #2b74ba;
@@ -145,7 +146,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 20vh 4vw;
+  padding: 20vh 4vw 10vh 4vw;
   background-color: #f5f7f6;
   min-height: 90vh;
 }
@@ -169,10 +170,17 @@
   border-radius: 50%;
   display: inline-block;
 }
+.hero .hero-img {
+  padding: 10rem 0 0 0;
+  width: 500px;
+}
 
 @media screen and (max-width: 800px) {
   .hero h1 {
     font-size: 5.3rem;
+  }
+  .hero .hero-img {
+    width: 400px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -182,6 +190,9 @@
   .hero p {
     padding-bottom: 5rem;
   }
+  .hero .hero-img {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 330px) {
   .hero h1 {
@@ -189,6 +200,9 @@
   }
   .hero p {
     font-size: 2rem;
+  }
+  .hero .hero-img {
+    width: 250px;
   }
 }
 .products {
@@ -609,6 +623,15 @@ input:focus {
 .contact .content .form .btn {
   margin-top: 2rem;
   width: 100%;
+}
+.contact .color-red {
+  color: hsl(4, 71%, 50%);
+}
+.contact .color-blue {
+  color: hsl(207, 56%, 45%);
+}
+.contact .contact__error {
+  margin-top: 10px;
 }
 @media screen and (max-width: 900px) {
   .contact .content {

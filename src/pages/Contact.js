@@ -1,4 +1,5 @@
 import contactImg from "../assets/imgs/undraw_contact_us_re_4qqt.svg";
+import { ContactForm } from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -31,7 +32,7 @@ const Contact = () => {
             <img src={contactImg} alt="contact" />
           </div>
         </div>
-        <form autocomplete="off" className="form">
+        {/* <form autocomplete="off" className="form">
           <h2>Contact us</h2>
           <div className="fields">
             <div className="field-container">
@@ -93,7 +94,9 @@ const Contact = () => {
             </div>
           </div>
           <input type="submit" value="Send" className="btn btn-secondary" />
-        </form>
+        </form> */}
+
+        <ContactForm />
       </div>
     </section>
   );
