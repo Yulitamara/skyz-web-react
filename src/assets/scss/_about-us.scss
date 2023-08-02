@@ -2,25 +2,30 @@
 
 .about-us {
   grid-column: container-start / container-end;
-  padding: 20vh 4vw;
-  display: flex;
-  align-items: start;
-  gap: 4rem;
   color: $text-color;
-  background-color: #f0f3fe;
+  background-color: #fff;
+  padding: 20vh 4vw 10vh 4vw;
+  .about-us__content {
+    display: flex;
+    align-items: start;
+    gap: 4rem;
 
-  p {
-    text-align: left;
-  }
-  img {
-    max-width: 400px;
-  }
-
-  @media screen and (max-width: 900px) {
-    flex-direction: column-reverse;
-    img {
-      max-width: 300px;
-      align-self: center;
+    p {
+      text-align: left;
     }
+    img {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column-reverse;
+      img {
+        max-width: 300px;
+        align-self: center;
+      }
+    }
+  }
+  .btns-container {
+    margin-top: 4rem;
   }
 }

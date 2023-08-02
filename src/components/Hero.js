@@ -16,7 +16,10 @@ const Hero = () => {
         <Link to="/contact" className="btn-secondary">
           Get Started
         </Link>
-        <Link to="/login" className="btn-primary">
+        <Link
+          to="https://crm-erp.co.il/planc2/logon/?lang=102"
+          className="btn-primary"
+        >
           Login
         </Link>
       </div>

@@ -64,6 +64,8 @@ import SkyzServiceMobile from "./pages/products/service/SkyzServiceMobile";
 import SLA from "./pages/products/service/SLA";
 import SocialCustomerService from "./pages/products/service/SocialCustomerService";
 import TasksManagement from "./pages/products/service/TasksManagement";
+import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
 
 function App() {
   return (
@@ -78,6 +80,8 @@ function App() {
           {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
 
           {/* Sales */}
           <Route path="/products/skyz-sales/sales/" element={<Sales />} />

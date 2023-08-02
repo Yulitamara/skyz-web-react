@@ -46,6 +46,11 @@ const Navbar = () => {
     };
   }, []);
 
+  // Function to close the menu when a menu item is clicked
+  const handleMenuItemClick = () => {
+    setMenuActive(false);
+  };
+
   return (
     <header className="navbar" ref={navbarRef}>
       <Link to="/">
@@ -53,7 +58,12 @@ const Navbar = () => {
       </Link>
       <div className={`links ${menuActive && "active"}`}>
         {navLinks.map((link, index) => (
-          <Link key={index} to={link.path} className="link">
+          <Link
+            key={index}
+            to={link.path}
+            className="link"
+            onClick={handleMenuItemClick}
+          >
             {link.title}
           </Link>
         ))}

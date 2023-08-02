@@ -3,14 +3,14 @@ const PrivacyPolicy = () => {
   return (
     <section className="privacy">
       <h3 className="privacy__title">Privacy Policy</h3>
-      <p className="privacy__para">
+      <p>
         Your privacy is important to us. It is Impact systems' policy to respect
         your privacy regarding any information we may collect from you across
-        our website, http://skyz.co.il, and other sites we own and operate.
+        our website, http://skyz.com, and other sites we own and operate.
       </p>
       <h3 className="privacy__small-title">1. Information we collect</h3>
       <h3 className="privacy__small-title">Log data</h3>
-      <p className="privacy__para">
+      <p>
         When you visit our website, our servers may automatically log the
         standard data provided by your web browser. It may include your
         computer’s Internet Protocol (IP) address, your browser type and
@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         spent on each page, and other details.
       </p>
       <h3 className="privacy__small-title">Device data</h3>
-      <p className="privacy__para">
+      <p>
         We may also collect data about the device you’re using to access our
         website. This data may include the device type, operating system, unique
         device identifiers, device settings, and geo-location data. What we
@@ -28,13 +28,13 @@ const PrivacyPolicy = () => {
         us.
       </p>
       <h3 className="privacy__small-title">Personal information</h3>
-      <p className="privacy__para">
+      <p>
         We may ask for personal information, such as your: Name, Email, Social
         media profiles, Date of birth, Phone/mobile number, Home/Mailing
         address, Work address, Payment information.
       </p>
       <h3 className="privacy__small-title">2. Legal bases for processing</h3>
-      <p className="privacy__para">
+      <p>
         We will process your personal information lawfully, fairly and in a
         transparent manner. We collect and process information about you only
         where we have legal bases for doing so.
@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
       <h3 className="privacy__small-title">
         3. Collection and use of information
       </h3>
-      <p className="privacy__para">
+      <p>
         We may collect, hold, use and disclose information for the following
         purposes and personal information will not be further processed in a
         manner that is incompatible with these purposes:
@@ -105,7 +105,7 @@ const PrivacyPolicy = () => {
       <h3 className="privacy__small-title">
         4. Disclosure of personal information to third parties
       </h3>
-      <p className="privacy__para">
+      <p>
         We may disclose personal information to:
         <br />
         third party service providers for the purpose of enabling them to
@@ -137,21 +137,21 @@ const PrivacyPolicy = () => {
       <h3 className="privacy__small-title">
         5. International transfers of personal information
       </h3>
-      <p className="privacy__para">
+      <p>
         The personal information we collect is stored and processed in United
         Kingdom, or where we or our partners, affiliates and third-party
         providers maintain facilities. By providing us with your personal
         information, you consent to the disclosure to these overseas third
         parties.
       </p>
-      <p className="privacy__para">
+      <p>
         We will ensure that any transfer of personal information from countries
         in the European Economic Area (EEA) to countries outside the EEA will be
         protected by appropriate safeguards, for example by using standard data
         protection clauses approved by the European Commission, or the use of
         binding corporate rules or other legally accepted means.
       </p>
-      <p className="privacy__para">
+      <p>
         Where we transfer personal information from a non-EEA country to another
         country, you acknowledge that third parties in other jurisdictions may
         not be subject to similar data protection laws to the ones in our
@@ -163,7 +163,7 @@ const PrivacyPolicy = () => {
       <h3 className="privacy__small-title">
         6. Your rights and controlling your personal information
       </h3>
-      <p className="privacy__para">
+      <p>
         <strong>Choice and consent:</strong>By providing personal information to
         us, you consent to us collecting, holding, using and disclosing your
         personal information in accordance with this privacy policy. If you are
@@ -175,14 +175,14 @@ const PrivacyPolicy = () => {
         however, if you do not, it may affect your use of this website or the
         products and/or services offered on or through it.
       </p>
-      <p className="privacy__para">
+      <p>
         <strong>Information from third parties:</strong>If we receive personal
         information about you from a third party, we will protect it as set out
         in this privacy policy. If you are a third party providing personal
         information about somebody else, you represent and warrant that you have
         such person’s consent to provide the personal information to us.
       </p>
-      <p className="privacy__para">
+      <p>
         <strong>Restrict:</strong>You may choose to restrict the collection or
         use of your personal information. If you have previously agreed to us
         using your personal information for direct marketing purposes, you may
@@ -191,7 +191,7 @@ const PrivacyPolicy = () => {
         information, we will let you know how the restriction affects your use
         of our website or products and services.
       </p>
-      <p className="privacy__para">
+      <p>
         <strong>Access and data portability:</strong>You may request details of
         the personal information that we hold about you. You may request a copy
         of the personal information we hold about you. Where possible, we will
@@ -200,18 +200,18 @@ const PrivacyPolicy = () => {
         about you at any time. You may also request that we transfer this
         personal information to another third party.
       </p>
-      <p className="privacy__para">
+      <p>
         <strong>Correction:</strong>If you believe that any information we hold
         about you is inaccurate, out of date, incomplete, irrelevant or
         misleading, please contact us using the details below. We will take
         reasonable steps to correct any information found to be inaccurate,
         incomplete, misleading or out of date.
       </p>
-      <p className="privacy__para">
+      <p>
         <strong>Notification of data breaches:</strong>We will comply laws
         applicable to us in respect of any data breach.
       </p>
-      <p className="privacy__para">
+      <p>
         <strong>Complaints:</strong>If you believe that we have breached a
         relevant data protection law and wish to make a complaint, please
         contact us using the details below and provide us with full details of
@@ -221,14 +221,14 @@ const PrivacyPolicy = () => {
         the right to contact a regulatory body or data protection authority in
         relation to your complaint.
       </p>
-      <p className="privacy__para">
+      <p>
         <strong>Unsubscribe:</strong>To unsubscribe from our e-mail database or
         opt-out of communications (including marketing communications), please
         contact us using the details below or opt-out using the opt-out
         facilities provided in the communication.
       </p>
       <h3 className="privacy__small-title">7. Cookies</h3>
-      <p className="privacy__para">
+      <p>
         We use “cookies” to collect information about you and your activity
         across our site. A cookie is a small piece of data that our website
         stores on your computer, and accesses each time you visit, so we can
@@ -237,7 +237,7 @@ const PrivacyPolicy = () => {
         more information.
       </p>
       <h3 className="privacy__small-title">8. Business transfers</h3>
-      <p className="privacy__para">
+      <p>
         If we or our assets are acquired, or in the unlikely event that we go
         out of business or enter bankruptcy, we would include data among the
         assets transferred to any parties who acquire us. You acknowledge that
@@ -245,27 +245,27 @@ const PrivacyPolicy = () => {
         continue to use your personal information according to this policy.
       </p>
       <h3 className="privacy__small-title">9. Limits of our policy</h3>
-      <p className="privacy__para">
+      <p>
         Our website may link to external sites that are not operated by us.
         Please be aware that we have no control over the content and policies of
         those sites, and cannot accept responsibility or liability for their
         respective privacy practices.
       </p>
       <h3 className="privacy__small-title">10. Changes to this policy</h3>
-      <p className="privacy__para">
+      <p>
         At our discretion, we may change our privacy policy to reflect current
         acceptable practices. We will take reasonable steps to let users know
         about changes via our website. Your continued use of this site after any
         changes to this policy will be regarded as acceptance of our practices
         around privacy and personal information.
       </p>
-      <p className="privacy__para">
+      <p>
         If we make a significant change to this privacy policy, for example
         changing a lawful basis on which we process your personal information,
         we will ask you to re-consent to the amended privacy policy.
       </p>
-      <p className="privacy__para">
-        <strong>Impact systems Data Controller</strong>
+      <p>
+        <strong>Impact systems Data Controller </strong>
         Google compute engine
         <br />
         https://cloud.google.com/

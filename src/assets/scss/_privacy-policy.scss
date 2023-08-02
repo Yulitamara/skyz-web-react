@@ -1,25 +1,25 @@
 .privacy {
   grid-column: container-start / container-end;
-  padding: 10rem 20rem;
+  padding: 10rem 8vw 10rem 8vw;
+  background-color: #fff;
+
   line-height: 2.2;
   &__title {
     font-size: 24px;
     font-weight: 300;
-    letter-spacing: 0.1rem;
     text-align: center;
   }
   &__small-title {
     font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
+    font-weight: bold;
   }
-  &__para {
-    font-size: 14px;
+  p {
+    font-size: 15px;
     padding: 1rem 0;
     text-align: start;
   }
-  
+
   @media screen and (max-width: 900px) {
-    padding: 5rem 2.5rem;
+    padding: 9rem 2.5rem;
   }
 }

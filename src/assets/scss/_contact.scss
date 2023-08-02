@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20vh 4vw;
+  padding: 10rem 4vw;
   background-color: #fff;
 
   .content {
@@ -100,7 +100,7 @@
     }
   }
   @media screen and (max-width: 550px) {
-    padding: 18vh 0;
+    padding: 9rem 0;
 
     .content {
       width: 100%;
