@@ -13,7 +13,8 @@ const About = () => {
         effectively operating your firm’s sales, marketing and service systems.
         Skyz also works as a SaaS (software as a service) payment model, where
         you gain immediate connection to an innovative and secure system with a
-        high level of functionality at an attractive monthly cost.
+        high level of functionality at an attractive monthly cost. Skys is a
+        product of IMPACT SOFTWARE SYSTEMS (1996) LTD.
       </p>
     </section>
   );

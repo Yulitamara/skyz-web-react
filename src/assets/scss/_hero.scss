@@ -1,3 +1,5 @@
+@import "./variables";
+
 .hero {
   grid-column: container-start / container-end;
   display: flex;
@@ -5,8 +7,9 @@
   flex-direction: column;
   justify-content: center;
   padding: 20vh 4vw 10vh 4vw;
-  background-color: #f5f7f6;
+  background-color: $background;
   min-height: 90vh;
+  color: $text-color;
 
   h1 {
     font-size: 7rem;
@@ -24,7 +27,7 @@
   }
 
   p .dot {
-    background-color: #ff917a;
+    background-color: $blue;
     width: 9px;
     height: 9px;
     margin-top: 5px;

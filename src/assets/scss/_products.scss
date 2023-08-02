@@ -1,3 +1,5 @@
+@import "./variables";
+
 .products {
   grid-column: container-start / container-end;
   display: grid;
@@ -13,7 +15,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 3vh;
-    background-color: #fff0eb;
+    background-color: $light-gray;
+    color: $text-color-on-light-gray;
+
     padding: 2rem;
     border-radius: 30px;
     .header {
@@ -34,6 +38,5 @@
   .products {
     padding: 1rem;
     gap: 1rem;
- 
   }
 }

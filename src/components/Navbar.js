@@ -1,5 +1,5 @@
 import "../assets/scss/_navigation.scss";
-import logo from "../assets/imgs/Skyz-CRM-Avada-Logo.png";
+import logo from "../assets/imgs/Skyz-logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { MenuOutlined } from "@ant-design/icons";
@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <Link to="/">
-        <img src={logo} alt="logo" className="logo" />
+        <img src={logo} alt="skyz-logo" className="logo" />
       </Link>
       <div className={`links ${menuActive && "active"}`}>
         {navLinks.map((link, index) => (

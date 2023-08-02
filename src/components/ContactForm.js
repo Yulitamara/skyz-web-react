@@ -143,7 +143,7 @@ export const ContactForm = () => {
       <input
         type="submit"
         value="Send"
-        className="btn btn-secondary"
+        className="btn btn-orange"
         onSubmit={sendEmail}
       />
     </form>

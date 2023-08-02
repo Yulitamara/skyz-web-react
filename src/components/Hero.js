@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../assets/scss/_hero.scss";
 import "../assets/scss/base.scss";
-import heroImg from "../assets/imgs/hero-img.svg";
+// import heroImg from "../assets/imgs/hero-img.svg";
 
 const Hero = () => {
   return (
@@ -13,14 +13,14 @@ const Hero = () => {
         Manage customers in real time at a glance <span className="dot"></span>
       </p>
       <div class="btns-container">
-        <Link to="/contact" className="btn-primary">
+        <Link to="/contact" className="btn-secondary">
           Get Started
         </Link>
         <Link to="/login" className="btn-primary">
           Login
         </Link>
       </div>
-      <img src={heroImg} alt="hero-img" className="hero-img" />
+      {/* <img src={heroImg} alt="hero-img" className="hero-img" /> */}
     </section>
   );
 };

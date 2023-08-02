@@ -12,6 +12,7 @@
 @import "./privacy-policy";
 @import "./side-nav";
 @import "./product";
+@import "./skyz-demo";
 
 *,
 *::before,
@@ -46,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.1rem;
 }
@@ -56,7 +57,7 @@ h3 {
   letter-spacing: 0.1rem;
 }
 p {
-  font-size: calc(1.2rem + 0.4vw);
+  font-size: calc(1.3rem + 0.4vw);
   text-align: center;
   font-weight: 200;
 }
@@ -82,9 +83,11 @@ p {
 }
 
 .btn-primary {
-  font-size: 16px;
+  font-size: calc(1.2rem + 0.4vw);
+  font-weight: 500;
   padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
-  border: 1.4px solid;
+  border: 2px solid $blue;
+  color: $blue;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -92,21 +95,33 @@ p {
 }
 
 .btn-primary:hover {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.333);
+  box-shadow: 2px 2px 5px rgba(67, 72, 207, 0.333);
 }
 
 .btn-secondary {
   font-size: calc(1.2rem + 0.4vw);
   padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
-  border: 2px solid;
+  border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  color: #3c4043;
-  background-color: #d6e2db;
+  color: #ffffff;
+  background-color: $blue;
   transition: all 0.3s ease-in-out;
 }
 .btn-secondary:hover {
-  color: #d6e2db;
-  background-color: #3c4043;
+  background-color: $blue-hover;
+}
+
+.btn-orange {
+  background-color: $orange;
+  color: $text-color-on-orange;
+  font-size: calc(1.2rem + 0.4vw);
+  padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-orange:hover {
+  background-color: $orange-hover;
 }

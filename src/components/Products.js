@@ -19,7 +19,7 @@ const Products = () => {
           reports.
         </p>
         <Link to="/products/skyz-sales/sales/">
-          <button className="btn-primary">Learn More</button>
+          <button className="btn-orange">Learn More</button>
         </Link>
       </div>
       <div className="product">
@@ -32,7 +32,7 @@ const Products = () => {
           campaigns via e-mail, mobile and social networks.
         </p>
         <Link to="/products/skyz-marketing/marketing/">
-          <button className="btn-primary">Learn More</button>
+          <button className="btn-orange">Learn More</button>
         </Link>
       </div>
       <div className="product">
@@ -46,7 +46,7 @@ const Products = () => {
           successfully completed.
         </p>
         <Link to="/products/skyz-service/service/">
-          <button className="btn-primary">Learn More</button>
+          <button className="btn-orange">Learn More</button>
         </Link>
       </div>
     </section>

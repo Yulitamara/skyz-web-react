@@ -1,3 +1,5 @@
+@import "./variables";
+
 .product-page-container {
   grid-column: container-start / container-end;
   padding: 5vh 0;
@@ -44,7 +46,7 @@
     font-weight: 300;
   }
   .link {
-    color: #534592;
+    color: $blue;
     cursor: pointer;
     background-color: transparent;
     font-weight: 600;
@@ -73,6 +75,32 @@
 
       .right {
         margin-left: 60px;
+      }
+      .left {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-page-container {
+    .product-section-container {
+      .right {
+        margin-left: 20px;
+      }
+      .left {
+        align-self: flex-end;
+        img {
+          width: 300px;
+        }
+      }
+    }
+    .product-section-container.row-reverse {
+      flex-direction: column;
+
+      .right {
+        margin-left: 20px;
       }
       .left {
         align-self: center;

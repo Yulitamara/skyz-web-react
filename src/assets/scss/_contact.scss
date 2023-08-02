@@ -14,8 +14,9 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    color: #3c4043;
+    color: $text-color;
     gap: 4rem;
+    // filter: drop-shadow(0px 8px 24px rgba(144, 188, 230, 0.5));
 
     .info {
       display: flex;
@@ -35,6 +36,10 @@
           font-size: 16px;
           gap: 0.7rem;
 
+          .google-map {
+            margin-bottom: 20px;
+          }
+
           .contact-icon {
             width: 28px;
           }
@@ -49,8 +54,8 @@
     }
 
     .form {
-      background-color: #d6e2db;
-      color: #3c4043;
+      background-color: $light-gray;
+      color: $text-color-on-light-gray;
       border-radius: 30px;
       padding: 2rem;
       min-width: 400px;
