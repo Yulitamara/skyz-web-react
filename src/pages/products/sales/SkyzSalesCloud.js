@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Dell-cloud-sales2-600x395.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -51,6 +52,7 @@ const SkyzSalesCloud = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

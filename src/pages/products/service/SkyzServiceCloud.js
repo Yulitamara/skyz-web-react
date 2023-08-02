@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/service/Skyz-Service-Cloud_new-600x747.png";
+import ServiceGetStarted from "../../../components/ServiceGetStarted";
 
 const paraData = [
   {
@@ -47,6 +48,7 @@ const SkyzServiceCloud = () => {
             />
           </div>
         </div>
+        <ServiceGetStarted />
       </div>
     </>
   );

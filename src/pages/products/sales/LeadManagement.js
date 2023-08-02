@@ -37,7 +37,6 @@ const LeadManagement = () => {
                 </div>
               );
             })}
-            <SalesGetStarted />
           </div>
           <div className="left">
             <img
@@ -47,6 +46,7 @@ const LeadManagement = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

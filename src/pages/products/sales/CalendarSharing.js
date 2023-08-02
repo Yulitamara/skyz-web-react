@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/calendar-sharing-600x747.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -45,6 +46,7 @@ const CalendarSharing = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

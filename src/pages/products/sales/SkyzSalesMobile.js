@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/mobile-access_new-600x747.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const SkyzSalesMobile = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Apple-iMac-forecast-600x789.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const ForecastSales = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

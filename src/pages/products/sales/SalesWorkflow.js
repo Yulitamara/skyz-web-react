@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Workflow_new-600x559.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const SalesWorkflow = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

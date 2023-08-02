@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/campaign-optimization-1-600x747.png";
+import MarketingGetStarted from "../../../components/MarketingGetStarted";
 
 const paraData = [
   {
@@ -39,6 +40,7 @@ const CampaignOptimization = () => {
             />
           </div>
         </div>
+        <MarketingGetStarted />
       </div>
     </>
   );

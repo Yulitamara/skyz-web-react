@@ -5,6 +5,8 @@
   padding: 5vh 0;
   background-color: #fff;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   .product-section-container {
     display: flex;

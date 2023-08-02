@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Dell-performance-management2-600x780.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -41,6 +42,7 @@ const PerformanceManagement = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

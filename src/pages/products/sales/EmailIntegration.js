@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/email-integration.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -45,6 +46,7 @@ const EmailIntegration = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

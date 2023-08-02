@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/service/Sharing-knowledge-600x747.png";
+import ServiceGetStarted from "../../../components/ServiceGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const SharingKnowledge = () => {
             />
           </div>
         </div>
+        <ServiceGetStarted />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Maximizing-new-customers-600x747.png";
+import MarketingGetStarted from "../../../components/MarketingGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const MaximizingNewCustomers = () => {
             />
           </div>
         </div>
+        <MarketingGetStarted />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Contact-management-600x747.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -44,6 +45,7 @@ const ContactManagement = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Sales-management_new-600x747.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -45,6 +46,7 @@ const SalesManagement = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

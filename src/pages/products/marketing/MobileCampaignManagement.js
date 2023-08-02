@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/mobile-campaign-management_mew-600x747.png";
+import MarketingGetStarted from "../../../components/MarketingGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const MobileCampaignManagement = () => {
             />
           </div>
         </div>
+        <MarketingGetStarted />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/social-sharing-2-600x747.png";
+import MarketingGetStarted from "../../../components/MarketingGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const SocialSharingMarketing = () => {
             />
           </div>
         </div>
+        <MarketingGetStarted />
       </div>
     </>
   );

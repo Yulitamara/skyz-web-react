@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/service/Customer-Service-calls-600x747.png";
+import ServiceGetStarted from "../../../components/ServiceGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const CustomerServiceCallsMgmt = () => {
             />
           </div>
         </div>
+        <ServiceGetStarted />
       </div>
     </>
   );

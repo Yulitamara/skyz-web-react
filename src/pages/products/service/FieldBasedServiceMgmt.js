@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/service/Field-based-service-ngmt-600x747.png";
+import ServiceGetStarted from "../../../components/ServiceGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const FieldBasedServiceMgmt = () => {
             />
           </div>
         </div>
+        <ServiceGetStarted />
       </div>
     </>
   );

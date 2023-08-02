@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Information-sharing3-1-600x395.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -42,6 +43,7 @@ const InformationSharing = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

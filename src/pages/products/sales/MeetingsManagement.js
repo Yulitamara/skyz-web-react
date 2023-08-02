@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/meetings-management_new-600x747.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -41,6 +42,7 @@ const MeetingsManagement = () => {
             />
           </div>
         </div>
+        <SalesGetStarted />
       </div>
     </>
   );

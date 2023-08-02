@@ -1,11 +1,10 @@
 .get-started {
   background-color: #534096;
   display: flex;
-  width: 100%;
+  margin: 5rem 4rem 0 4rem;
   align-items: center;
   gap: 4rem;
   padding: 2rem 4rem;
-  margin-top: 5rem;
   .left {
     flex: 3;
     h1 {
@@ -18,7 +17,7 @@
   }
   .right {
     flex: 1;
-    button {
+    .btn {
       border-radius: 20px;
       background-color: white;
       color: #534096;
@@ -31,11 +30,34 @@
     }
   }
 }
-@media screen and (max-width: 1500px) {
-  .get-started {
-    flex-direction: column;
-  }
+.red-bg {
+  background-color: #d33034;
+}
+.btn.red-text {
+  color: #d33034 !important;
 }
 
-@media screen and (max-width: 600px) {
+.green-bg {
+  background-color: #388E3C;
+}
+.btn.green-text {
+  color: #388E3C !important;
+}
+@media screen and (max-width: 800px) {
+  .get-started {
+    flex-direction: column;
+    text-align: center;
+    margin: 5rem 0 0 0;
+
+    .left {
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .get-started {
+    padding: 2rem 1rem;
+  }
 }
