@@ -35,7 +35,11 @@ const MarketingControl = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Marketing control with Skyz CRM"
+              title="marketing-control"
+            />
           </div>
         </div>
       </div>

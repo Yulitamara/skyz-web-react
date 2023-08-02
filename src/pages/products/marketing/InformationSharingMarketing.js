@@ -35,7 +35,11 @@ const InformationSharingMarketing = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Information sharing with Skyz Marketing"
+              title="information-sharing_new"
+            />
           </div>
         </div>
       </div>

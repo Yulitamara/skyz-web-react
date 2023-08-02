@@ -71,7 +71,11 @@ const Service = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Comprehensive service management with Skyz CRM"
+              title="service-level-2-image-1"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -131,7 +135,11 @@ const Service = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img2} />
+            <img
+              src={img2}
+              alt="SLA management with Skyz Service"
+              title="service-level-2-image-6"
+            />
           </div>
         </div>
         <div className="product-section-container">
@@ -173,7 +181,11 @@ const Service = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img3} />
+            <img
+              src={img3}
+              alt="Files sharing with Skyz Service"
+              title="service-level-2-image-3"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -218,7 +230,11 @@ const Service = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img4} />
+            <img
+              src={img4}
+              alt="Social customer service with Skyz Service"
+              title="service-level-2-image-4"
+            />
           </div>
         </div>
         <div className="product-section-container">
@@ -268,7 +284,11 @@ const Service = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img5} />
+            <img
+              src={img5}
+              alt="Service anytime anywhere with Skyz CRM"
+              title="service-level-2-image-5"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -311,7 +331,11 @@ const Service = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img6} />
+            <img
+              src={img6}
+              alt="Customer service workflow with Skyz CRM"
+              title="level2-image8"
+            />
           </div>
         </div>
         <div className="product-section-container">
@@ -354,7 +378,11 @@ const Service = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img7} />
+            <img
+              src={img7}
+              alt="Analyze information with Skyz CRM"
+              title="service-level2-image9"
+            />
           </div>
         </div>
       </div>

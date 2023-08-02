@@ -32,7 +32,11 @@ const CustomerServiceInformationMgmt = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Information management with Skyz Service"
+              title="service-information-management"
+            />
           </div>
         </div>
       </div>

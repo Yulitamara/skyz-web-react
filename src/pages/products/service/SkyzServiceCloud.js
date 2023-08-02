@@ -40,7 +40,11 @@ const SkyzServiceCloud = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Skyz Service cloud technology"
+              title="Skyz-Service-Cloud_new"
+            />
           </div>
         </div>
       </div>

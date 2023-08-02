@@ -35,7 +35,11 @@ const EmailCampaignManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Email campaign with Skyz CRM"
+              title="email-campaign-management"
+            />
           </div>
         </div>
       </div>

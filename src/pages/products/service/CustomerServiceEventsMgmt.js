@@ -35,7 +35,11 @@ const CustomerServiceEventsMgmt = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Service events management with Skyz CRM"
+              title="Customer-service-events-mgmt"
+            />
           </div>
         </div>
       </div>

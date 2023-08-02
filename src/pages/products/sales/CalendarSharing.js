@@ -38,7 +38,11 @@ const CalendarSharing = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Calendar sharing with Skyz Sales"
+              title="calendar-sharing"
+            />
           </div>
         </div>
       </div>

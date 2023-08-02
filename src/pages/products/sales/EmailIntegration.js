@@ -38,7 +38,11 @@ const EmailIntegration = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Email integration with skyz Sales"
+              title="Email-integration"
+            />
           </div>
         </div>
       </div>

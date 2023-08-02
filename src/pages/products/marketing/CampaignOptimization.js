@@ -32,7 +32,11 @@ const CampaignOptimization = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Campaign optimization with Skyz Marketing"
+              title="campaign-optimization"
+            />
           </div>
         </div>
       </div>

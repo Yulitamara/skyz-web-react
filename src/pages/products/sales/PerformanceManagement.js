@@ -34,7 +34,11 @@ const PerformanceManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Performance management with Skyz Sales"
+              title="Dell-performance-management2"
+            />
           </div>
         </div>
       </div>

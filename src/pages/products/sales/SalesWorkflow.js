@@ -35,7 +35,11 @@ const SalesWorkflow = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="workflow with Skyz Sales"
+              title="Workflow_new"
+            />
           </div>
         </div>
       </div>

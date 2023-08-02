@@ -38,7 +38,11 @@ const LeadManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Lead management with Skyz CRM"
+              title="Lead-management"
+            />
           </div>
         </div>
       </div>

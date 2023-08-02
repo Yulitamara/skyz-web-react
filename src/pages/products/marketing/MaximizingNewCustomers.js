@@ -35,7 +35,11 @@ const MaximizingNewCustomers = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Maximizing new customers with Skyz Marketing"
+              title="Maximizing-new-customers"
+            />
           </div>
         </div>
       </div>

@@ -48,7 +48,11 @@ const Marketing = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Progressive campaigns with Skyz Marketing"
+              title="Skyz Marketing"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -88,7 +92,11 @@ const Marketing = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img2} />
+            <img
+              src={img2}
+              alt="Social marketing management with Skyz CRM"
+              title="marketing-level-2-img2"
+            />
           </div>
         </div>
         <div className="product-section-container">
@@ -147,7 +155,11 @@ const Marketing = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img3} />
+            <img
+              src={img3}
+              alt="Social marketing management with Skyz CRM"
+              title="marketing-level-2-img3"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -189,7 +201,11 @@ const Marketing = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img4} />
+            <img
+              src={img4}
+              alt="Sharing marketing information with Skyz CRM"
+              title="marketing-level-2-img6"
+            />
           </div>
         </div>
         <div className="product-section-container">
@@ -248,7 +264,11 @@ const Marketing = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img5} />
+            <img
+              src={img5}
+              alt="Improving marketing processes with Skyz CRM"
+              title="marketing-level-2-img7"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -308,7 +328,11 @@ const Marketing = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img6} />
+            <img
+              src={img6}
+              alt="Sharing marketing information with Skyz CRM"
+              title="marketing-level-2-img8"
+            />
           </div>
         </div>
       </div>

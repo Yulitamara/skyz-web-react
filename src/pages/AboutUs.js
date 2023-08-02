@@ -72,7 +72,7 @@ const AboutUs = () => {
           with the most up-to-date system at any point in time.
         </p>
       </div>
-      <img src={officeImg} />
+      <img src={officeImg} alt="office-img" />
     </div>
   );
 };

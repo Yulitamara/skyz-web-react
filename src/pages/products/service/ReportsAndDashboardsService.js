@@ -35,7 +35,11 @@ const ReportsAndDashboardsService = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Skyz Service dashboards"
+              title="Dashboard-service"
+            />
           </div>
         </div>
       </div>

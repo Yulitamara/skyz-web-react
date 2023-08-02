@@ -35,7 +35,11 @@ const MobileCampaignManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Mobile campaign with Skyz CRM"
+              title="mobile-campaign-management_mew"
+            />
           </div>
         </div>
       </div>

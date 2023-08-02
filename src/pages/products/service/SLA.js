@@ -35,7 +35,11 @@ const SLA = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Service Level Agreement with Skyz CRM"
+              title="SLA"
+            />
           </div>
         </div>
       </div>

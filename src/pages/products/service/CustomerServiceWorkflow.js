@@ -35,7 +35,11 @@ const CustomerServiceWorkflow = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Workflow with Skyz Service"
+              title="Customer-service-workflow_new"
+            />
           </div>
         </div>
       </div>

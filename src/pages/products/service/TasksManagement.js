@@ -35,7 +35,11 @@ const TasksManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Task management with Skyz Service"
+              title="tasks-mgmt"
+            />
           </div>
         </div>
       </div>

@@ -35,7 +35,11 @@ const DatabaseManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Database management with Skyz CRM"
+              title="database-management"
+            />
           </div>
         </div>
       </div>

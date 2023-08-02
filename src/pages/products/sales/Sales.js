@@ -63,7 +63,11 @@ const Sales = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Maximizing selling with Skyz CRM"
+              title="level2-image2"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -119,7 +123,11 @@ const Sales = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img2} />
+            <img
+              src={img2}
+              alt="Sales meetings management with Skyz CRM"
+              title="level2-image1"
+            />
           </div>
         </div>
         <div className="product-section-container">
@@ -167,7 +175,11 @@ const Sales = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img3} />
+            <img
+              src={img3}
+              alt="Improving work processes with Skyz Sales"
+              title="level2-image5"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -204,7 +216,11 @@ const Sales = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img4} />
+            <img
+              src={img4}
+              alt="Improving work processes with Skyz Sales"
+              title="level2-image6"
+            />
           </div>
         </div>
         <div className="product-section-container">
@@ -261,7 +277,11 @@ const Sales = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img5} />
+            <img
+              src={img5}
+              alt="Sharing information online with Skyz Sales"
+              title="level2-image4"
+            />
           </div>
         </div>
         <div className="product-section-container row-reverse">
@@ -300,7 +320,11 @@ const Sales = () => {
             </div>
           </div>
           <div className="left">
-            <img src={img6} />
+            <img
+              src={img6}
+              alt="Smart sales dashboards with Skyz CRM"
+              title="sales-level-2-image-8"
+            />
           </div>
         </div>
       </div>

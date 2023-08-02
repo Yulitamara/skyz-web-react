@@ -44,7 +44,11 @@ const SkyzSalesCloud = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Skyz Sales cloud technology"
+              title="Dell-cloud-sales2"
+            />
           </div>
         </div>
       </div>

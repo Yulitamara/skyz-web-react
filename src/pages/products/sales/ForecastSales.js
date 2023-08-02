@@ -35,7 +35,11 @@ const ForecastSales = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Forecast sales with Skyz CRM"
+              title="Apple-iMac-forecast"
+            />
           </div>
         </div>
       </div>

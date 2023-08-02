@@ -37,7 +37,11 @@ const ContactManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Contact management with Skyz CRM"
+              title="Contact-management"
+            />
           </div>
         </div>
       </div>

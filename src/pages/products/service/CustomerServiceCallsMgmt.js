@@ -35,7 +35,11 @@ const CustomerServiceCallsMgmt = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Service calls management with Skyz CRM"
+              title="Customer-Service-calls"
+            />
           </div>
         </div>
       </div>

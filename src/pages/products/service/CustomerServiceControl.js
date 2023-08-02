@@ -40,7 +40,11 @@ const CustomerServiceControl = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Customer service control with Skyz CRM"
+              title="service-control"
+            />
           </div>
         </div>
       </div>

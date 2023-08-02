@@ -35,7 +35,11 @@ const GenerateCustomerDetails = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Generate customer details with Skyz CRM"
+              title="generate-cstomer-details"
+            />
           </div>
         </div>
       </div>

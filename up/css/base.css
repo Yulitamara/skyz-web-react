@@ -701,7 +701,7 @@ input:focus {
 .side-nav {
   position: fixed;
   background-color: #f5f7f6;
-  margin-top: 70px;
+  margin-top: 8rem;
   width: 250px;
   height: 100%;
 }

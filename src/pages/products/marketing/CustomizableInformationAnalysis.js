@@ -35,7 +35,11 @@ const CustomizableInformationAnalysis = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="One on one marketing with Skyz CRM"
+              title="сustomizable-analis"
+            />
           </div>
         </div>
       </div>

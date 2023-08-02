@@ -35,7 +35,11 @@ const SocialCampaignManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Social campaign with Skyz CRM"
+              title="social-campaign-managment"
+            />
           </div>
         </div>
       </div>

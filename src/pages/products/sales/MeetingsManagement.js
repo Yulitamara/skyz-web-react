@@ -34,7 +34,11 @@ const MeetingsManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Meeting management with Skyz CRM"
+              title="meetings-management_new"
+            />
           </div>
         </div>
       </div>

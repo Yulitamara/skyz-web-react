@@ -35,7 +35,11 @@ const SkyzServiceMobile = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Skyz Service mobile access"
+              title="skyz-service-mobile"
+            />
           </div>
         </div>
       </div>

@@ -35,7 +35,11 @@ const ShareCalendars = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Sharing calendars with Skyz Service"
+              title="share-calanders"
+            />
           </div>
         </div>
       </div>

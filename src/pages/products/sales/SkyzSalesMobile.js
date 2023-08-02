@@ -35,7 +35,11 @@ const SkyzSalesMobile = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Skyz Sales mobile access"
+              title="mobile-access_new"
+            />
           </div>
         </div>
       </div>

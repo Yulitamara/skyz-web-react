@@ -35,7 +35,11 @@ const CustomerClubs = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Customer clubs with Skyz CRM"
+              title="customers-club"
+            />
           </div>
         </div>
       </div>

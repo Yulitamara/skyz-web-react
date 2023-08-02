@@ -38,7 +38,11 @@ const SocialSharing = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Social sharing with Skyz Sales"
+              title="social-sharing"
+            />
           </div>
         </div>
       </div>

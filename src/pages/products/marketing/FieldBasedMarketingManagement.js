@@ -35,7 +35,11 @@ const FieldBasedMarketingManagement = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Skyz Marketing information anywhere"
+              title="Field-based-marketing-management"
+            />
           </div>
         </div>
       </div>

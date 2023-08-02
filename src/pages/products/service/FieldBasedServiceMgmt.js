@@ -35,7 +35,11 @@ const FieldBasedServiceMgmt = () => {
             })}
           </div>
           <div className="left">
-            <img src={img1} />
+            <img
+              src={img1}
+              alt="Field based service with Skyz CRM"
+              title="Field-based-service-ngmt"
+            />
           </div>
         </div>
       </div>
