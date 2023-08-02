@@ -1,4 +1,5 @@
 import img1 from "../../../assets/imgs/sales/Lead-management-1-600x747.png";
+import SalesGetStarted from "../../../components/SalesGetStarted";
 
 const paraData = [
   {
@@ -36,6 +37,7 @@ const LeadManagement = () => {
                 </div>
               );
             })}
+            <SalesGetStarted />
           </div>
           <div className="left">
             <img

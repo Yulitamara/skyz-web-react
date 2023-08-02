@@ -1,0 +1,41 @@
+.get-started {
+  background-color: #534096;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  margin-top: 5rem;
+  .left {
+    flex: 3;
+    h1 {
+      color: white;
+    }
+    p {
+      color: white;
+      text-align: left;
+    }
+  }
+  .right {
+    flex: 1;
+    button {
+      border-radius: 20px;
+      background-color: white;
+      color: #534096;
+      font-size: calc(1.2rem + 0.4vw);
+      padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .get-started {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}

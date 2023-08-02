@@ -10,7 +10,7 @@ const Products = () => {
     <section className="products">
       <div className="product">
         <div className="header">
-          <img src={sales} />
+          <img src={sales} alt="sales img" />
           <h2>SALES</h2>
         </div>
         <p>
@@ -24,7 +24,7 @@ const Products = () => {
       </div>
       <div className="product">
         <div className="header">
-          <img src={marketing} />
+          <img src={marketing} alt="marketing img" />
           <h2>MARKETING</h2>
         </div>
         <p>
@@ -37,7 +37,7 @@ const Products = () => {
       </div>
       <div className="product">
         <div className="header">
-          <img src={service} />
+          <img src={service} alt="service img" />
           <h2>SERVICE</h2>
         </div>
         <p>

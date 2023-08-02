@@ -44,9 +44,9 @@
   .navbar .links {
     width: 300px;
     height: 100vh;
-    background-color: #eeefef;
+    background-color: #F0F3F5;
     position: absolute;
-    top: 65px;
+    top: 8rem;
     left: -500px;
     transition: 300ms ease left;
     flex-direction: column;
@@ -255,17 +255,16 @@
 }
 .about-us p {
   text-align: left;
-  text-align: justify;
 }
 .about-us img {
-  max-width: 500px;
+  max-width: 400px;
 }
 @media screen and (max-width: 900px) {
   .about-us {
     flex-direction: column-reverse;
   }
   .about-us img {
-    max-width: 200px;
+    max-width: 300px;
     align-self: center;
   }
 }
@@ -698,33 +697,6 @@ input:focus {
   }
 }
 
-.side-nav {
-  position: fixed;
-  background-color: #f5f7f6;
-  margin-top: 8rem;
-  width: 250px;
-  height: 100%;
-}
-.side-nav .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  background-color: #e5ebe8;
-  padding: 10px 20px;
-}
-.side-nav .header .icon {
-  background-color: #c5d0cc;
-  border-radius: 50%;
-  padding: 5px;
-}
-.side-nav .links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-}
-
 .product-page-container {
   grid-column: container-start/container-end;
   padding: 5vh 0;
@@ -762,18 +734,22 @@ input:focus {
   font-weight: 400;
 }
 .para p {
-  color: #3f3f3f;
+  color: #2b2b4f;
   text-align: start;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 0.5rem;
 }
 .para .link {
   color: #6160ff;
   cursor: pointer;
   background-color: transparent;
   font-weight: 600;
-  margin-top: 20px;
   font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.para .link:hover {
+  color: #5151d5;
 }
 
 @media screen and (max-width: 900px) {
@@ -971,6 +947,45 @@ input:focus {
   list-style: none;
 }
 
+.get-started {
+  background-color: #534096;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  margin-top: 5rem;
+}
+.get-started .left {
+  flex: 3;
+}
+.get-started .left h1 {
+  color: white;
+}
+.get-started .left p {
+  color: white;
+  text-align: left;
+}
+.get-started .right {
+  flex: 1;
+}
+.get-started .right button {
+  border-radius: 20px;
+  background-color: white;
+  color: #534096;
+  font-size: calc(1.2rem + 0.4vw);
+  padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1500px) {
+  .get-started {
+    flex-direction: column;
+  }
+}
 *,
 *::before,
 *::after {
@@ -994,13 +1009,13 @@ html body {
 a {
   text-decoration: none;
   font-size: 16px;
-  color: black;
+  color: #2b2b4f;
 }
 
 h1 {
   font-size: 33px;
   font-weight: 300;
-  letter-spacing: -0.05em;
+  color: #2b2b4f;
 }
 
 h2 {

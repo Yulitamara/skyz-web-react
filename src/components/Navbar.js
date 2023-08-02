@@ -1,7 +1,7 @@
 import "../assets/scss/_navigation.scss";
 import logo from "../assets/imgs/Skyz-logo.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react"; 
 import { MenuOutlined } from "@ant-design/icons";
 
 const navLinks = [
@@ -29,9 +29,26 @@ const navLinks = [
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const navbarRef = useRef(null); 
+
+  useEffect(() => {
+    // click event listener when the component mounts
+    const handleOutsideClick = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setMenuActive(false); // Close the navbar when clicked outside
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
 
   return (
-    <header className="navbar">
+    <header className="navbar" ref={navbarRef}>
       <Link to="/">
         <img src={logo} alt="skyz-logo" className="logo" />
       </Link>
