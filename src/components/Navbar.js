@@ -1,8 +1,7 @@
 import "../assets/scss/_navigation.scss";
 import logo from "../assets/imgs/Skyz-logo.png";
 import { Link } from "react-router-dom";
-import { useState, useEffect, useRef } from "react"; 
-import { MenuOutlined } from "@ant-design/icons";
+import { useState, useEffect, useRef } from "react";
 
 const navLinks = [
   {
@@ -29,7 +28,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
-  const navbarRef = useRef(null); 
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     // click event listener when the component mounts
@@ -68,7 +67,12 @@ const Navbar = () => {
           <span className="link">En</span>
         </div> */}
       </div>
-      <MenuOutlined onClick={() => setMenuActive(!menuActive)} />
+      <span
+        className="material-symbols-outlined menu-icon"
+        onClick={() => setMenuActive(!menuActive)}
+      >
+        menu
+      </span>
     </header>
   );
 };

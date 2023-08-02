@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>
-        Copyright {new Date().getFullYear()} Impact Software Systems | All Rights
-        Reserved
+        Copyright {new Date().getFullYear()} IMPACT SOFTWARE SYSTEMS (1996) LTD
+        | All Rights Reserved
       </p>
     </div>
   );

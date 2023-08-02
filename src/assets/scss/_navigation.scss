@@ -15,14 +15,15 @@
   font-size: 16px;
   z-index: 99;
 
-  .anticon-menu {
-    font-size: 32px;
-    width: 65px;
+  .menu-icon {
     cursor: pointer;
     display: none;
+    font-size: 40px;
+    color: #498ba1;
   }
   img {
     display: flex;
+    width: 80px;
   }
 
   .links {
@@ -51,7 +52,7 @@
     .links {
       width: 300px;
       height: 100vh;
-      background-color: #F0F3F5;
+      background-color: #f0f3f5;
       position: absolute;
       top: 8rem;
       left: -500px;
@@ -65,7 +66,7 @@
       }
     }
 
-    .anticon-menu {
+    .menu-icon {
       display: flex;
     }
   }

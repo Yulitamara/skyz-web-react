@@ -57,9 +57,8 @@ h3 {
   letter-spacing: 0.1rem;
 }
 p {
-  font-size: calc(1.3rem + 0.4vw);
+  font-size: calc(1.5rem + 0.4vw);
   text-align: center;
-  font-weight: 200;
 }
 
 .App {
@@ -78,20 +77,25 @@ p {
 /* Btns */
 .btns-container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   z-index: 9;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .btn-primary {
   font-size: calc(1.2rem + 0.4vw);
   font-weight: 500;
-  padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
   border: 2px solid $blue;
   color: $blue;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background-color: transparent;
+  padding: 16px 48px;
 }
 
 .btn-primary:hover {
@@ -100,13 +104,13 @@ p {
 
 .btn-secondary {
   font-size: calc(1.2rem + 0.4vw);
-  padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
   border: none;
   border-radius: 20px;
   cursor: pointer;
   color: #ffffff;
   background-color: $blue;
   transition: all 0.3s ease-in-out;
+  padding: 16px 48px;
 }
 .btn-secondary:hover {
   background-color: $blue-hover;

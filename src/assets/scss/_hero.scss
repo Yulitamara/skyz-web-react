@@ -13,6 +13,7 @@
 
   h1 {
     font-size: 7rem;
+    font-weight: 600;
   }
 
   h1.span {
@@ -34,10 +35,6 @@
     border-radius: 50%;
     display: inline-block;
   }
-  .hero-img {
-    padding: 10rem 0 0 0;
-    width: 500px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -45,34 +42,27 @@
     h1 {
       font-size: 5.3rem;
     }
-    .hero-img {
-      width: 400px;
+    p {
+      padding: 1rem 4rem;
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .hero {
     h1 {
       font-size: 4.5rem;
-    }
-    p {
-      padding-bottom: 5rem;
-    }
-    .hero-img {
-      width: 300px;
     }
   }
 }
 @media screen and (max-width: 330px) {
   .hero {
+    padding: 10vh 4vw 0vh 4vw;
+
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
     p {
       font-size: 2rem;
-    }
-    .hero-img {
-      width: 250px;
     }
   }
 }
