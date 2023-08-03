@@ -88,7 +88,7 @@ p {
 }
 
 .btn-primary {
-  font-size: calc(1.2rem + 0.4vw);
+  font-size: 18px;
   font-weight: 500;
   border: 2px solid $blue;
   color: $blue;
@@ -96,6 +96,10 @@ p {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   padding: 16px 48px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
 }
 
 .btn-primary:hover {
@@ -103,7 +107,8 @@ p {
 }
 
 .btn-secondary {
-  font-size: calc(1.2rem + 0.4vw);
+  font-size: 18px;
+
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -111,6 +116,10 @@ p {
   background-color: $blue;
   transition: all 0.3s ease-in-out;
   padding: 16px 48px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
 }
 .btn-secondary:hover {
   background-color: $blue-hover;
