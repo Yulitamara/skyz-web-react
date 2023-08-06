@@ -22,8 +22,7 @@ export const ContactForm = () => {
       contactName.value === "" ||
       contactEmail.value === "" ||
       contactMessage.value === "" ||
-      contactPhone.value === "" ||
-      contactOrganization.value === ""
+      contactPhone.value === ""
     ) {
       // Add and remove color
       contactError.classList.remove("color-blue");
