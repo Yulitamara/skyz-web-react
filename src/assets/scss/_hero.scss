@@ -8,7 +8,7 @@
   justify-content: center;
   padding: 14rem 4vw 8rem 4vw;
   background-color: $background;
-  min-height: 90vh;
+  // min-height: 90vh;
   color: $text-color;
 
   h1 {
@@ -39,7 +39,6 @@
 
 @media screen and (max-width: 800px) {
   .hero {
-    // min-height: 0;
     h1 {
       font-size: 5.3rem;
     }

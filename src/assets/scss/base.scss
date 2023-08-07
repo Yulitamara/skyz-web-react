@@ -66,6 +66,44 @@ textarea {
   font-size: 14px;
 }
 
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.active {
+  display: none !important;
+}
+
+.small-chip {
+  font-size: 14px;
+  gap: 1rem;
+  padding: 2px 8px;
+  border-radius: 4rem;
+  width: fit-content;
+  min-width: 50px;
+
+  text-align: center;
+  cursor: pointer;
+}
+.small-chip.green {
+  color: #43493e;
+  background-color: #cad7bd;
+}
+.small-chip.red {
+  color: #690005;
+  background-color: #ffb4ab;
+}
+.stop-icon {
+  color: #aacfeda1;
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
+  font-size: 14px;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 .App {
   max-width: 1700px;
   margin: 0 auto;

@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Products from "../components/Products";
-// import Demo from "../components/Demo";
+import Demo from "../components/Demo";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
         <link rel="canonical" href="/"></link>
       </Helmet>
       <Hero />
-      {/* <Demo /> */}
+      <Demo />
       <About />
       <Products />
     </>
