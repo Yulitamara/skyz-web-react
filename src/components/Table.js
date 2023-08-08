@@ -3,7 +3,7 @@ import React from "react";
 const Table = () => {
   return (
     <div className="table-wrapper">
-      <table className="fl-table table">
+      <table className="fl-table">
         <thead>
           <tr>
             <th>

@@ -1,11 +1,10 @@
 .table-wrapper {
+  max-width: 1100px;
   font-size: 16px;
   overflow-x: auto;
-  text-overflow: ellipsis;
-
   overflow-y: auto;
-  //   width: 100%;
-  max-width: 1085px;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .fl-table {
@@ -16,21 +15,19 @@
   width: 100%;
   white-space: nowrap;
   font-size: 16px;
-  font-size: 0.9em;
   gap: 1rem;
   position: relative;
+  min-width: 10px;
 }
 
 .fl-table td,
 .fl-table th {
   padding: 2rem;
-  //   font-weight: font-weight(font-weight-medium);
   text-align: start;
   overflow-x: hidden;
   overflow-y: auto;
   text-overflow: ellipsis;
   vertical-align: center;
-  //   color: var(--color-on-primary-light);
   border: 1px solid #fff;
 }
 .fl-table td:first-child,
@@ -126,6 +123,9 @@ tr:hover {
 }
 .td-menu {
   width: 20px;
+  @media screen and (max-width: 970px) {
+    width: auto;
+  }
 }
 
 .td-bold {
@@ -165,63 +165,6 @@ tr > td:first-child {
 }
 .small-cell {
   width: 70px;
-}
-
-/* Chrome, Edge, Safari */
-[data-table-col] {
-  --rng-h: 1px;
-  --rng-thumb-bgc: transparent;
-  --rng-thumb-h: var(--th, 6rem);
-  --rng-thumb-w: 2rem;
-
-  background: transparent;
-  box-sizing: border-box;
-  font-family: inherit;
-  height: 1px;
-  margin: 0;
-  outline: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-[data-table-col]::-webkit-slider-thumb {
-  border: 0;
-  cursor: ew-resize;
-  height: var(--rng-thumb-h);
-  width: var(--rng-thumb-w);
-}
-[data-table-col]:focus-visible::-webkit-slider-thumb {
-  --rng-thumb-bgc: rgb(0, 0, 0, 0.1);
-}
-[data-table-col]::-webkit-slider-runnable-track {
-  background: transparent;
-  height: var(--rng-h);
-}
-[data-table-col],
-[data-table-col]::-webkit-slider-runnable-track,
-[data-table-col]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-/* Firefox */
-@-moz-document url-prefix() {
-  [data-table-col] {
-    top: calc(var(--rng-thumb-h) / 2);
-  }
-}
-[data-table-col]::-moz-range-thumb {
-  border: 0;
-  cursor: ew-resize;
-  height: var(--rng-thumb-h);
-  width: var(--rng-thumb-w);
-}
-[data-table-col]:focus-visible::-moz-range-thumb {
-  --rng-thumb-bgc: rgb(0, 0, 0, 0.1);
-}
-
-[data-table-parent] {
-  position: relative;
 }
 
 .td-icon {

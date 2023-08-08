@@ -1,13 +1,31 @@
 import "../assets/scss/_skyz-demo.scss";
 import personImge from "../assets/imgs/person.jpg";
 import Table from "./Table";
+import { useState } from "react";
 
 const Demo = () => {
+  // Create an array of booleans to manage the open state of each box
+  const [boxOpenStates, setBoxOpenStates] = useState({
+    connections: false,
+    communication: false,
+    // Add more keys for other boxes here
+  });
+
+  const [openBox, setOpenBox] = useState(null); // Track the currently open box
+
+  const openBoxHandler = (boxKey) => {
+    setOpenBox(boxKey);
+  };
+
   return (
     <div className="skyz-demo">
       <h1>
         Live Demo! Try it out
         <span className="material-symbols-outlined">arrow_downward</span>
+        {/* <br /> */}
+        <span className="material-symbols-outlined phone-icon">
+          phone_iphone
+        </span>
       </h1>
       <div className="demo-container">
         <div className="skyz-demo__navbar">
@@ -59,7 +77,7 @@ const Demo = () => {
         <div className="navbar__overlay"></div>
 
         <div className="new-container">
-          <div className="skyz-demo__sidebar">
+          <div className="skyz-demo__sidebar active-sidebar">
             <div className="sidebar__content">
               <ul className="sidebar__content--list">
                 <li className="create-item">
@@ -146,153 +164,232 @@ const Demo = () => {
                     </div>
                   </div>
                 </div>
-                <div className="card__boxes">
-                  <div className="card__boxes--box">
-                    <div className="card__boxes--box__header">
-                      <div className="card__boxes--box__header--title">
-                        <span className="material-symbols-outlined">link</span>
-                        <span>Connections</span>
+                {openBox === null && (
+                  <div className="card__boxes">
+                    <div className="card__boxes--box">
+                      <div className="card__boxes--box__header">
+                        <div className="card__boxes--box__header--title">
+                          <span className="material-symbols-outlined">
+                            link
+                          </span>
+                          <span>Connections</span>
+                        </div>
+                        <div className="card__boxes--box__header--btns">
+                          <span
+                            class="material-symbols-outlined"
+                            onClick={() => openBoxHandler("connections")}
+                          >
+                            expand_more
+                          </span>
+                        </div>
                       </div>
-                      <div className="card__boxes--box__header--btns">
-                        <span class="material-symbols-outlined">
-                          expand_more
-                        </span>
+                      <div className="card__boxes--box__content">
+                        <div className="card__boxes--box__content--fields">
+                          <span>Figma, employee</span>
+                          <span className="material-symbols-outlined stop-icon">
+                            stop
+                          </span>
+                          <span>Lina Dee</span>
+                          <span className="material-symbols-outlined stop-icon">
+                            stop
+                          </span>
+                          <span>Max Reynolds, manager</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="card__boxes--box__content">
-                      <div className="card__boxes--box__content--fields">
-                        <span>Figma, employee</span>
-                        <span className="material-symbols-outlined stop-icon">
-                          stop
-                        </span>
-                        <span>Lina Dee</span>
-                        <span className="material-symbols-outlined stop-icon">
-                          stop
-                        </span>
-                        <span>Max Reynolds, manager</span>
+                    <div className="card__boxes--box">
+                      <div className="card__boxes--box__header">
+                        <div className="card__boxes--box__header--title">
+                          <span className="material-symbols-outlined">
+                            phone
+                          </span>
+                          <span>Communication</span>
+                        </div>
+                        <div className="card__boxes--box__header--btns">
+                          <span
+                            class="material-symbols-outlined"
+                            onClick={() => openBoxHandler("communication")}
+                          >
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                      <div className="card__boxes--box__content">
+                        <div className="card__boxes--box__content--fields">
+                          <span>Work, +972-38728829</span>
+                          <span className="material-symbols-outlined stop-icon">
+                            stop
+                          </span>
+                          <span>Private, +972-52390378</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card__boxes--box">
+                      <div className="card__boxes--box__header">
+                        <div className="card__boxes--box__header--title">
+                          <span className="material-symbols-outlined">
+                            home
+                          </span>
+                          <span>Addresses</span>
+                        </div>
+                        <div className="card__boxes--box__header--btns">
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                      <div className="card__boxes--box__content">
+                        <div className="card__boxes--box__content--fields">
+                          <span>Halel 90, Jerusalem, 91827</span>
+                          <span className="material-symbols-outlined stop-icon">
+                            stop
+                          </span>
+                          <span>Ben Gurion 24, Remat Gan</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card__boxes--box">
+                      <div className="card__boxes--box__header">
+                        <div className="card__boxes--box__header--title">
+                          <span className="material-symbols-outlined">
+                            info
+                          </span>
+                          <span>More Info</span>
+                        </div>
+                        <div className="card__boxes--box__header--btns">
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                      <div className="card__boxes--box__content">
+                        <div className="card__boxes--box__content--fields">
+                          <span>Doctor</span>
+                          <span className="material-symbols-outlined stop-icon">
+                            stop
+                          </span>
+                          <span>24/08/1989</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="card__boxes--box">
-                    <div className="card__boxes--box__header">
-                      <div className="card__boxes--box__header--title">
-                        <span className="material-symbols-outlined">phone</span>
-                        <span>Communication</span>
-                      </div>
-                      <div className="card__boxes--box__header--btns">
-                        <span class="material-symbols-outlined">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                    <div className="card__boxes--box__content">
-                      <div className="card__boxes--box__content--fields">
-                        <span>Work, +972-38728829</span>
-                        <span className="material-symbols-outlined stop-icon">
-                          stop
-                        </span>
-                        <span>Private, +972-52390378</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card__boxes--box">
-                    <div className="card__boxes--box__header">
-                      <div className="card__boxes--box__header--title">
-                        <span className="material-symbols-outlined">home</span>
-                        <span>Addresses</span>
-                      </div>
-                      <div className="card__boxes--box__header--btns">
-                        <span class="material-symbols-outlined">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                    <div className="card__boxes--box__content">
-                      <div className="card__boxes--box__content--fields">
-                        <span>Halel 90, Jerusalem, 91827</span>
-                        <span className="material-symbols-outlined stop-icon">
-                          stop
-                        </span>
-                        <span>Ben Gurion 24, Remat Gan</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card__boxes--box">
-                    <div className="card__boxes--box__header">
-                      <div className="card__boxes--box__header--title">
-                        <span className="material-symbols-outlined">info</span>
-                        <span>More Info</span>
-                      </div>
-                      <div className="card__boxes--box__header--btns">
-                        <span class="material-symbols-outlined">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                    <div className="card__boxes--box__content">
-                      <div className="card__boxes--box__content--fields">
-                        <span>Doctor</span>
-                        <span className="material-symbols-outlined stop-icon">
-                          stop
-                        </span>
-                        <span>24/08/1989</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                )}
+
                 <div className="card__open-boxes">
-                  <div className="card__open-boxes--box">
-                    <div className="card-header">
-                      <div className="top">
-                        <div className="left">
-                          <div className="title medium-title">
-                            <span className="material-symbols-outlined title-icon">
-                              link
-                            </span>
-                            <span>Connections</span>
-                          </div>
-                          <div className="flex-container title-right">
-                            <div className="filter-tag">
-                              <span className="material-symbols-outlined">
-                                vertical_split
+                  {openBox === "connections" && (
+                    <div className="card__open-boxes--box">
+                      <div className="card-header">
+                        <div className="top">
+                          <div className="left">
+                            <div className="title medium-title">
+                              <span className="material-symbols-outlined title-icon">
+                                link
                               </span>
+                              <span>Connections</span>
                             </div>
-                            <div className="filter-tag">
-                              <span className="material-symbols-outlined">
-                                assignment
-                              </span>
-                              <div>
+                            <div className="flex-container title-right">
+                              <div className="filter-tag">
                                 <span className="material-symbols-outlined">
-                                  arrow_drop_down
+                                  vertical_split
+                                </span>
+                              </div>
+                              <div className="filter-tag">
+                                <span className="material-symbols-outlined">
+                                  assignment
+                                </span>
+                                <div>
+                                  <span className="material-symbols-outlined">
+                                    arrow_drop_down
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="filter-tag">
+                                <span className="material-symbols-outlined">
+                                  search
                                 </span>
                               </div>
                             </div>
-                            <div className="filter-tag">
+                          </div>
+                          <div className="right">
+                            <div className="round-btn round-btn-secondary">
                               <span className="material-symbols-outlined">
-                                search
+                                add
                               </span>
                             </div>
-                          </div>
-                        </div>
-                        <div className="right">
-                          <div className="round-btn round-btn-secondary">
                             <span className="material-symbols-outlined">
-                              add
+                              more_vert
+                            </span>
+                            <span
+                              className="material-symbols-outlined"
+                              onClick={() => openBoxHandler(null)}
+                            >
+                              close
                             </span>
                           </div>
-                          <span className="material-symbols-outlined">
-                            more_vert
-                          </span>
-                          <span className="material-symbols-outlined hideSingle">
-                            close
-                          </span>
                         </div>
                       </div>
+                      <div class="card__open-boxes--box__content">
+                        <Table />
+                      </div>
                     </div>
-                    <div class="card__open-boxes--box__content">
-                      <Table />
+                  )}
+                  {openBox === "communication" && (
+                    <div className="card__open-boxes--box">
+                      <div className="card-header">
+                        <div className="top">
+                          <div className="left">
+                            <div className="title medium-title">
+                              <span className="material-symbols-outlined title-icon">
+                                call
+                              </span>
+                              <span>Communication</span>
+                            </div>
+                            <div className="flex-container title-right">
+                              <div className="filter-tag">
+                                <span className="material-symbols-outlined">
+                                  vertical_split
+                                </span>
+                              </div>
+                              <div className="filter-tag">
+                                <span className="material-symbols-outlined">
+                                  assignment
+                                </span>
+                                <div>
+                                  <span className="material-symbols-outlined">
+                                    arrow_drop_down
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="filter-tag">
+                                <span className="material-symbols-outlined">
+                                  search
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="right">
+                            <div className="round-btn round-btn-secondary">
+                              <span className="material-symbols-outlined">
+                                add
+                              </span>
+                            </div>
+                            <span className="material-symbols-outlined">
+                              more_vert
+                            </span>
+                            <span
+                              className="material-symbols-outlined"
+                              onClick={() => openBoxHandler(null)}
+                            >
+                              close
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__open-boxes--box__content">
+                        <Table />
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
