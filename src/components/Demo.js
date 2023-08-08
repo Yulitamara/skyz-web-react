@@ -1,5 +1,6 @@
 import "../assets/scss/_skyz-demo.scss";
 import personImge from "../assets/imgs/person.jpg";
+import Table from "./Table";
 
 const Demo = () => {
   return (
@@ -46,13 +47,13 @@ const Demo = () => {
             </span>
             <div className="darkmode-toggle">
               <button aria-label="darkmode-toggle" id="darkmodeToggle">
-                <span className="material-symbols-outlined">light_mode</span>
+                <span className="material-symbols-outlined">dark_mode</span>
               </button>
             </div>
             <div className="navbar__personal--name">Impact System</div>
-            <div className="round-img-container">
-              {/* <img src="./up/imgs/passport.webp" alt=""> */}
-            </div>
+            {/* <div className="round-img-container"> */}
+            {/* <img src="./up/imgs/passport.webp" alt=""> */}
+            {/* </div> */}
           </div>
         </div>
         <div className="navbar__overlay"></div>
@@ -64,7 +65,7 @@ const Demo = () => {
                 <li className="create-item">
                   <a href="#">
                     <span className="material-symbols-outlined">add</span>
-                    <div>צור</div>
+                    <div>Create</div>
                   </a>
                 </li>
                 <li>
@@ -236,6 +237,60 @@ const Demo = () => {
                         </span>
                         <span>24/08/1989</span>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="card__open-boxes">
+                  <div className="card__open-boxes--box">
+                    <div className="card-header">
+                      <div className="top">
+                        <div className="left">
+                          <div className="title medium-title">
+                            <span className="material-symbols-outlined title-icon">
+                              link
+                            </span>
+                            <span>Connections</span>
+                          </div>
+                          <div className="flex-container title-right">
+                            <div className="filter-tag">
+                              <span className="material-symbols-outlined">
+                                vertical_split
+                              </span>
+                            </div>
+                            <div className="filter-tag">
+                              <span className="material-symbols-outlined">
+                                assignment
+                              </span>
+                              <div>
+                                <span className="material-symbols-outlined">
+                                  arrow_drop_down
+                                </span>
+                              </div>
+                            </div>
+                            <div className="filter-tag">
+                              <span className="material-symbols-outlined">
+                                search
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="right">
+                          <div className="round-btn round-btn-secondary">
+                            <span className="material-symbols-outlined">
+                              add
+                            </span>
+                          </div>
+                          <span className="material-symbols-outlined">
+                            more_vert
+                          </span>
+                          <span className="material-symbols-outlined hideSingle">
+                            close
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__open-boxes--box__content">
+                      <Table />
                     </div>
                   </div>
                 </div>
