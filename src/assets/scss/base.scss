@@ -14,6 +14,7 @@
 @import "./skyz-demo";
 @import "./get-started";
 @import "./filters";
+@import "./table";
 
 *,
 *::before,
@@ -33,6 +34,25 @@ html body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   background-color: rgb(231, 231, 231);
+}
+////// Scrollbar //////
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  // display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #006493;
+  background: #fff;
+  background-color: #f6f8fc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #e2e2e5;
+
+  border-radius: 5px;
 }
 
 a {
@@ -133,6 +153,86 @@ textarea {
   justify-content: center;
   cursor: pointer;
 }
+// TAGS
+.tag {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 2rem;
+  padding: 4px 8px;
+  border-radius: 2rem;
+  width: 110px;
+  height: 30px;
+  background-color: #cae6ff;
+  color: #001e30;
+  cursor: pointer;
+}
+.tag:hover {
+  background-color: #b5d0e7;
+}
+
+.tag.green {
+  background-color: #8cf9ab;
+  color:  #213b07;
+}
+
+.tag.green:hover {
+  background-color: #78e798;
+}
+
+.tag.red {
+  background:#ffdad6;
+  color: #2d1516;
+}
+
+.tag.red:hover {
+  background:  #eccabf;
+}
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.bigger-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.smaller-icon {
+  position: absolute;
+  top: 0;
+  left: -13px;
+  font-size: 20px;
+  border-radius: 180px;
+  z-index: 2;
+  cursor: pointer;
+  background-color: #cae6ff;
+  color: #444746;
+}
+
+.smaller-icon:hover {
+  background-color: #bcd7ef;
+}
+
+.smaller-icon.green {
+  background-color: #8cf9ab;
+  color: #213b07;
+}
+
+.smaller-icon.green:hover {
+  background-color: #78e798;
+}
+
+.smaller-icon.red {
+  background: #ffdad6;
+  color:  #2d1516;
+}
+
+.smaller-icon.red:hover {
+  background:  #eccabf;
+}
+
+
 .App {
   max-width: 1700px;
   margin: 0 auto;
