@@ -1,7 +1,8 @@
 import "../assets/scss/_skyz-demo.scss";
 import personImge from "../assets/imgs/person.jpg";
-import Table from "./Table";
+// import Table from "./Table";
 import { useState } from "react";
+import Table from "./Table";
 
 const Demo = () => {
   // Create an array of booleans to manage the open state of each box
@@ -73,11 +74,16 @@ const Demo = () => {
             {/* <img src="./up/imgs/passport.webp" alt=""> */}
             {/* </div> */}
           </div>
+          <div className="navbar__hamburger-menu">
+            <span className="material-symbols-outlined hamburger-menu">
+              menu
+            </span>
+          </div>
         </div>
         <div className="navbar__overlay"></div>
 
         <div className="new-container">
-          <div className="skyz-demo__sidebar active-sidebar">
+          <div className="skyz-demo__sidebar">
             <div className="sidebar__content">
               <ul className="sidebar__content--list">
                 <li className="create-item">
@@ -149,7 +155,7 @@ const Demo = () => {
                         <span className="round-img-container">
                           <img src={personImge} alt="person image" />
                         </span>
-                        <span>Yael Segal</span>
+                        <span>Deandra Reynolds</span>
                       </div>
                       <div className="flex-container title-right">
                         <span className="small-chip red">Manager</span>

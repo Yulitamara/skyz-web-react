@@ -1,10 +1,10 @@
 .table-wrapper {
-  max-width: 1100px;
-  font-size: 16px;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: auto;
   text-overflow: ellipsis;
   width: 100%;
+  // max-width: 1100px;
+  // min-width: none;
 }
 
 .fl-table {
@@ -12,12 +12,10 @@
   border: none;
   border-collapse: separate;
   border-spacing: 0;
-  width: 100%;
   white-space: nowrap;
   font-size: 16px;
   gap: 1rem;
   position: relative;
-  min-width: 10px;
 }
 
 .fl-table td,
@@ -123,9 +121,9 @@ tr:hover {
 }
 .td-menu {
   width: 20px;
-  @media screen and (max-width: 970px) {
-    width: auto;
-  }
+  // @media screen and (max-width: 970px) {
+  //   width: auto;
+  // }
 }
 
 .td-bold {
@@ -201,3 +199,15 @@ tr > td:first-child {
 .no-border-top {
   border-top: none !important;
 }
+
+// @media screen and (max-width: 600px) {
+//   .fl-table {
+//     font-size: 14px;
+//     gap: 0.5rem;
+//   }
+
+//   .fl-table td,
+//   .fl-table th {
+//     padding: 1rem;
+//   }
+// }
