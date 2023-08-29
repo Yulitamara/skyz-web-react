@@ -1,22 +1,32 @@
 import { Link } from "react-router-dom";
 import contactImg from "../assets/imgs/undraw_contact_us_re_4qqt.svg";
 import { ContactForm } from "../components/ContactForm";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section className="contact">
       <div className="content">
         <div className="info">
-          <h2>Let's get in touch</h2>
-          <p>Availble Sunday-Thursday 9:00-17:00</p>
+          <h2>{t("contactHeader")}</h2>
+          <p>
+            {t("contactTimes")}
+          </p>
           <div className="info-details">
             <div className="detail">
-              <Link to="https://goo.gl/maps/NBRVWoysWoAZbh8V9" className="pin-drop-icon">
+              <Link
+                to="https://goo.gl/maps/NBRVWoysWoAZbh8V9"
+                className="pin-drop-icon"
+              >
                 <span className="material-symbols-outlined contact-icon">
                   pin_drop
                 </span>
               </Link>
-              <p>Ben Gurion 24, Ramat Gan</p>
+              <p>
+                {t("contactLocation")}
+                
+              </p>
             </div>
             <div className="detail">
               <span className="material-symbols-outlined contact-icon">
@@ -28,7 +38,9 @@ const Contact = () => {
               <span className="material-symbols-outlined contact-icon">
                 call
               </span>
-              <p>03-6101800 / +972-6101800</p>
+              <p>
+                {t("contactPhone")}
+              </p>
             </div>
           </div>
           <div className="info-img">

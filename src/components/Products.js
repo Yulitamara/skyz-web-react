@@ -4,49 +4,40 @@ import service from "../assets/imgs/products-imgs/service.png";
 import "../assets/scss/_products.scss";
 import "../assets/scss/base.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Products = () => {
+  const { t } = useTranslation();
   return (
     <section className="products">
       <div className="product">
         <div className="header">
           <img src={sales} alt="sales img" />
-          <h2>SALES</h2>
+          <h2>{t("salesHeader")}</h2>
         </div>
-        <p>
-          Provides an up-to- date snapshot of lead management, opportunity
-          management, contacts, sales people, transaction management and smart
-          reports.
-        </p>
+        <p>{t("salesContent")}</p>
         <Link to="/products/skyz-sales/sales/">
-          <button className="btn-orange">Learn More</button>
+          <button className="btn-orange">{t("learnMore")}</button>
         </Link>
       </div>
       <div className="product">
         <div className="header">
           <img src={marketing} alt="marketing img" />
-          <h2>MARKETING</h2>
+          <h2>{t("marketingHeader")}</h2>
         </div>
-        <p>
-          Proactively expand your customer base. Manage and follow your
-          campaigns via e-mail, mobile and social networks.
-        </p>
+        <p>{t("marketingContent")}</p>
         <Link to="/products/skyz-marketing/marketing/">
-          <button className="btn-orange">Learn More</button>
+          <button className="btn-orange">{t("learnMore")}</button>
         </Link>
       </div>
       <div className="product">
         <div className="header">
           <img src={service} alt="service img" />
-          <h2>SERVICE</h2>
+          <h2>{t("serviceHeader")}</h2>
         </div>
-        <p>
-          Handle service calls from any location in real time. Monitor service
-          processes at a glance and manage them effectively until they are
-          successfully completed.
-        </p>
+        <p>{t("serviceContent")}</p>
         <Link to="/products/skyz-service/service/">
-          <button className="btn-orange">Learn More</button>
+          <button className="btn-orange">{t("learnMore")}</button>
         </Link>
       </div>
     </section>

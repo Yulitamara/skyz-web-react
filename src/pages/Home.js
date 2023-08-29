@@ -16,7 +16,7 @@ const Home = () => {
         <link rel="canonical" href="/"></link>
       </Helmet>
       <Hero />
-      <Demo />
+      {/* <Demo /> */}
       <About />
       <Products />
     </>

@@ -39,6 +39,12 @@ html body {
 .language-container {
   grid-column: container-start / container-end;
 }
+.lang-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
 ////// Scrollbar //////
 ::-webkit-scrollbar {
   width: 5px;

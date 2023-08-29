@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
   const sendEmail = (e) => {
@@ -64,6 +65,7 @@ export const ContactForm = () => {
     }
   };
 
+  const { t } = useTranslation();
   return (
     <form
       autoComplete="off"
@@ -71,7 +73,7 @@ export const ContactForm = () => {
       onSubmit={sendEmail}
       id="contact-form"
     >
-      <h2>Contact us</h2>
+      <h2>{t("contactFormHeader")}</h2>
       <div className="fields">
         <div className="field-container">
           <div className="label-container">
@@ -81,7 +83,7 @@ export const ContactForm = () => {
             <input
               type="text"
               className="input"
-              placeholder="Full Name"
+              placeholder={t("contactFormName")}
               required
               name="user_name"
             />
@@ -96,7 +98,7 @@ export const ContactForm = () => {
               type="text"
               className="input"
               required
-              placeholder="Email"
+              placeholder={t("contactFormEmail")}
               name="user_email"
               id="contact-email"
             />
@@ -111,7 +113,7 @@ export const ContactForm = () => {
               type="number"
               className="input"
               required
-              placeholder="Phone"
+              placeholder={t("contactFormPhone")}
               id="contact-phone"
               name="phone"
             />
@@ -127,21 +129,21 @@ export const ContactForm = () => {
             <input
               type="text"
               className="input"
-              placeholder="Organization"
+              placeholder={t("contactFormOrganization")}
               name="organization"
               id="contact-organization"
             />
           </div>
         </div>
         <div className="textarea">
-          <label className="title">Message:</label>
+          <label className="title">{t("contactFormMessage")}</label>
           <textarea name="message" id="message" className="input"></textarea>
         </div>
         <p className="contact__error" id="contact-error"></p>
       </div>
       <input
         type="submit"
-        value="Send"
+        value={t("sendBtn")}
         className="btn btn-orange"
         onSubmit={sendEmail}
       />

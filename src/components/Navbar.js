@@ -4,36 +4,13 @@ import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
 import i18next from "i18next";
-
 import { useTranslation } from "react-i18next";
 
-const navLinks = [
-  {
-    title: "Home",
-    path: "/",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Login",
-    path: "https://crm-erp.co.il/planc2/logon/?lang=102",
-  },
-  // {
-  //   title: "Blog",
-  //   path: "/blogs",
-  // },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
-];
 
 const lngs = {
-  en: { nativeName: "English" },
+  en: { nativeName: "En" },
   he: {
-    nativeName: "Hebrew",
+    nativeName: "He",
   },
 };
 
@@ -62,7 +39,7 @@ const Navbar = () => {
     setMenuActive(false);
   };
 
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <header className="navbar" ref={navbarRef}>
@@ -70,24 +47,29 @@ const Navbar = () => {
         <img src={logo} alt="skyz-logo" className="logo" />
       </Link>
       <div className={`links ${menuActive && "active"}`}>
-        {navLinks.map((link, index) => (
-          <Link
-            key={index}
-            to={link.path}
-            className="link"
-            onClick={handleMenuItemClick}
-          >
-            {link.title}
-          </Link>
-        ))}
-        {/* <span className="material-symbols-outlined darkmode-toggle">
+        <Link to="/" className="link" onClick={handleMenuItemClick}>
+          {t("navHome")}
+        </Link>
+        <Link to="/about" className="link" onClick={handleMenuItemClick}>
+          {t("navAbout")}
+        </Link>
+        <Link
+          to="https://crm-erp.co.il/planc2/logon/?lang=102"
+          className="link"
+          onClick={handleMenuItemClick}
+        >
+          {t("navLogin")}
+        </Link>
+        <Link to="/contact" className="link" onClick={handleMenuItemClick}>
+          {t("navContact")}
+        </Link>
+        <span className="material-symbols-outlined darkmode-toggle">
           dark_mode
-        </span> */}
+        </span>
         <div className="lang">
-          {/* <span className="link">He</span>
-          <span className="link">En</span> */}
           {Object.keys(lngs).map((lng) => (
             <button
+              className="lang-btn"
               type="submit"
               key={lng}
               onClick={() => i18next.changeLanguage(lng)}
