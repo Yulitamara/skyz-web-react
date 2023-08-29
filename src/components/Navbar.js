@@ -32,7 +32,9 @@ const navLinks = [
 
 const lngs = {
   en: { nativeName: "English" },
-  he: { nativeName: "Hebrew" },
+  he: {
+    nativeName: "Hebrew",
+  },
 };
 
 const Navbar = () => {

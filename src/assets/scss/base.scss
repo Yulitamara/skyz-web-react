@@ -36,6 +36,9 @@ html body {
   overflow-x: hidden;
   background-color: rgb(231, 231, 231);
 }
+.language-container {
+  grid-column: container-start / container-end;
+}
 ////// Scrollbar //////
 ::-webkit-scrollbar {
   width: 5px;
@@ -174,7 +177,7 @@ textarea {
 
 .tag.green {
   background-color: #8cf9ab;
-  color:  #213b07;
+  color: #213b07;
 }
 
 .tag.green:hover {
@@ -182,12 +185,12 @@ textarea {
 }
 
 .tag.red {
-  background:#ffdad6;
+  background: #ffdad6;
   color: #2d1516;
 }
 
 .tag.red:hover {
-  background:  #eccabf;
+  background: #eccabf;
 }
 .icon-container {
   position: relative;
@@ -226,13 +229,12 @@ textarea {
 
 .smaller-icon.red {
   background: #ffdad6;
-  color:  #2d1516;
+  color: #2d1516;
 }
 
 .smaller-icon.red:hover {
-  background:  #eccabf;
+  background: #eccabf;
 }
-
 
 .App {
   max-width: 1700px;

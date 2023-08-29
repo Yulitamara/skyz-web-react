@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
@@ -67,218 +69,234 @@ import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
 
 function App() {
+  const { i18n } = useTranslation();
+
+  // Get the language direction from i18next
+  const languageDirection = i18n.dir();
+
+  // Define styles based on the language direction
+  const containerStyles = {
+    direction: languageDirection,
+    // Add other styles as needed
+  };
+
   return (
     <div className="App">
       <Router>
         <ScrollToTop />
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          {/* <Route path="/blogs" element={<Blogs />} /> */}
-          {/* <Route path="/login" element={<Login />} /> */}
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <div className="language-container" style={containerStyles}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            {/* <Route path="/blogs" element={<Blogs />} /> */}
+            {/* <Route path="/login" element={<Login />} /> */}
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
 
-          {/* Sales */}
-          <Route path="/products/skyz-sales/sales/" element={<Sales />} />
-          <Route
-            path="/products/skyz-sales/lead-management/"
-            element={<LeadManagement />}
-          />
-          <Route
-            path="/products/skyz-sales/opportunity-management/"
-            element={<OpportunityManagement />}
-          />
-          <Route
-            path="/products/skyz-sales/sales-management/"
-            element={<SalesManagement />}
-          />
-          <Route
-            path="/products/skyz-sales/contact-management/"
-            element={<ContactManagement />}
-          />
-          <Route
-            path="/products/skyz-sales/meetings-management/"
-            element={<MeetingsManagement />}
-          />
-          <Route
-            path="/products/skyz-sales/performance-management/"
-            element={<PerformanceManagement />}
-          />
-          <Route
-            path="/products/skyz-sales/skyz-sales-cloud/"
-            element={<SkyzSalesCloud />}
-          />
-          <Route
-            path="/products/skyz-sales/skyz-sales-mobile/"
-            element={<SkyzSalesMobile />}
-          />
-          <Route
-            path="/products/skyz-sales/sales-workflow/"
-            element={<SalesWorkflow />}
-          />
-          <Route
-            path="/products/skyz-sales/email-integration/"
-            element={<EmailIntegration />}
-          />
-          <Route
-            path="/products/skyz-sales/information-sharing/"
-            element={<InformationSharing />}
-          />
-          <Route
-            path="/products/skyz-sales/calendar-sharing/"
-            element={<CalendarSharing />}
-          />
-          <Route
-            path="/products/skyz-sales/social-sharing/"
-            element={<SocialSharing />}
-          />
-          <Route
-            path="/products/skyz-sales/forecast-sales/"
-            element={<ForecastSales />}
-          />
-          <Route
-            path="/products/skyz-sales/reports-and-dashboards/"
-            element={<ReportsAndDashboards />}
-          />
+            {/* Sales */}
+            <Route path="/products/skyz-sales/sales/" element={<Sales />} />
+            <Route
+              path="/products/skyz-sales/lead-management/"
+              element={<LeadManagement />}
+            />
+            <Route
+              path="/products/skyz-sales/opportunity-management/"
+              element={<OpportunityManagement />}
+            />
+            <Route
+              path="/products/skyz-sales/sales-management/"
+              element={<SalesManagement />}
+            />
+            <Route
+              path="/products/skyz-sales/contact-management/"
+              element={<ContactManagement />}
+            />
+            <Route
+              path="/products/skyz-sales/meetings-management/"
+              element={<MeetingsManagement />}
+            />
+            <Route
+              path="/products/skyz-sales/performance-management/"
+              element={<PerformanceManagement />}
+            />
+            <Route
+              path="/products/skyz-sales/skyz-sales-cloud/"
+              element={<SkyzSalesCloud />}
+            />
+            <Route
+              path="/products/skyz-sales/skyz-sales-mobile/"
+              element={<SkyzSalesMobile />}
+            />
+            <Route
+              path="/products/skyz-sales/sales-workflow/"
+              element={<SalesWorkflow />}
+            />
+            <Route
+              path="/products/skyz-sales/email-integration/"
+              element={<EmailIntegration />}
+            />
+            <Route
+              path="/products/skyz-sales/information-sharing/"
+              element={<InformationSharing />}
+            />
+            <Route
+              path="/products/skyz-sales/calendar-sharing/"
+              element={<CalendarSharing />}
+            />
+            <Route
+              path="/products/skyz-sales/social-sharing/"
+              element={<SocialSharing />}
+            />
+            <Route
+              path="/products/skyz-sales/forecast-sales/"
+              element={<ForecastSales />}
+            />
+            <Route
+              path="/products/skyz-sales/reports-and-dashboards/"
+              element={<ReportsAndDashboards />}
+            />
 
-          {/* Marketing */}
-          <Route
-            path="/products/skyz-marketing/marketing/"
-            element={<Marketing />}
-          />
-          <Route
-            path="/products/skyz-marketing/campaign-optimization/"
-            element={<CampaignOptimization />}
-          />
-          <Route
-            path="/products/skyz-marketing/customer-clubs/"
-            element={<CustomerClubs />}
-          />
-          <Route
-            path="/products/skyz-marketing/customizable-information-analysis/"
-            element={<CustomizableInformationAnalysis />}
-          />
-          <Route
-            path="/products/skyz-marketing/database-management/"
-            element={<DatabaseManagement />}
-          />
-          <Route
-            path="/products/skyz-marketing/email-campaign-management/"
-            element={<EmailCampaignManagement />}
-          />
-          <Route
-            path="/products/skyz-marketing/field-based-marketing-management/"
-            element={<FieldBasedMarketingManagement />}
-          />
-          <Route
-            path="/products/skyz-marketing/generate-customer-details/"
-            element={<GenerateCustomerDetails />}
-          />
-          <Route
-            path="/products/skyz-marketing/information-sharing/"
-            element={<InformationSharingMarketing />}
-          />
-          <Route
-            path="/products/skyz-marketing/marketing-automation/"
-            element={<MarketingAutomation />}
-          />
-          <Route
-            path="/products/skyz-marketing/marketing-control/"
-            element={<MarketingControl />}
-          />
-          <Route
-            path="/products/skyz-marketing/maximizing-new-customers/"
-            element={<MaximizingNewCustomers />}
-          />
-          <Route
-            path="/products/skyz-marketing/mobile-campaign-management/"
-            element={<MobileCampaignManagement />}
-          />
-          <Route
-            path="/products/skyz-marketing/reports-and-dashboards/"
-            element={<ReportsAndDashboardsMarketing />}
-          />
-          <Route
-            path="/products/skyz-marketing/social-campaign-management/"
-            element={<SocialCampaignManagement />}
-          />
-          <Route
-            path="/products/skyz-marketing/social-sharing/"
-            element={<SocialSharingMarketing />}
-          />
+            {/* Marketing */}
+            <Route
+              path="/products/skyz-marketing/marketing/"
+              element={<Marketing />}
+            />
+            <Route
+              path="/products/skyz-marketing/campaign-optimization/"
+              element={<CampaignOptimization />}
+            />
+            <Route
+              path="/products/skyz-marketing/customer-clubs/"
+              element={<CustomerClubs />}
+            />
+            <Route
+              path="/products/skyz-marketing/customizable-information-analysis/"
+              element={<CustomizableInformationAnalysis />}
+            />
+            <Route
+              path="/products/skyz-marketing/database-management/"
+              element={<DatabaseManagement />}
+            />
+            <Route
+              path="/products/skyz-marketing/email-campaign-management/"
+              element={<EmailCampaignManagement />}
+            />
+            <Route
+              path="/products/skyz-marketing/field-based-marketing-management/"
+              element={<FieldBasedMarketingManagement />}
+            />
+            <Route
+              path="/products/skyz-marketing/generate-customer-details/"
+              element={<GenerateCustomerDetails />}
+            />
+            <Route
+              path="/products/skyz-marketing/information-sharing/"
+              element={<InformationSharingMarketing />}
+            />
+            <Route
+              path="/products/skyz-marketing/marketing-automation/"
+              element={<MarketingAutomation />}
+            />
+            <Route
+              path="/products/skyz-marketing/marketing-control/"
+              element={<MarketingControl />}
+            />
+            <Route
+              path="/products/skyz-marketing/maximizing-new-customers/"
+              element={<MaximizingNewCustomers />}
+            />
+            <Route
+              path="/products/skyz-marketing/mobile-campaign-management/"
+              element={<MobileCampaignManagement />}
+            />
+            <Route
+              path="/products/skyz-marketing/reports-and-dashboards/"
+              element={<ReportsAndDashboardsMarketing />}
+            />
+            <Route
+              path="/products/skyz-marketing/social-campaign-management/"
+              element={<SocialCampaignManagement />}
+            />
+            <Route
+              path="/products/skyz-marketing/social-sharing/"
+              element={<SocialSharingMarketing />}
+            />
 
-          {/* Service */}
-          <Route path="/products/skyz-service/service/" element={<Service />} />
-          <Route
-            path="/products/skyz-service/customer-service-calls-mgmt/"
-            element={<CustomerServiceCallsMgmt />}
-          />
-          <Route
-            path="/products/skyz-service/customer-service-control/"
-            element={<CustomerServiceControl />}
-          />
-          <Route
-            path="/products/skyz-service/customer-service-events-mgmt/"
-            element={<CustomerServiceEventsMgmt />}
-          />
-          <Route
-            path="/products/skyz-service/customer-service-information-mgmt/"
-            element={<CustomerServiceInformationMgmt />}
-          />
-          <Route
-            path="/products/skyz-service/customer-service-performance-mgmt/"
-            element={<CustomerServicePerformanceMgmt />}
-          />
-          <Route
-            path="/products/skyz-service/customer-service-workflow/"
-            element={<CustomerServiceWorkflow />}
-          />
-          <Route
-            path="/products/skyz-service/email-integration/"
-            element={<EmailIntegrationService />}
-          />
-          <Route
-            path="/products/skyz-service/field-based-service-mgmt/"
-            element={<FieldBasedServiceMgmt />}
-          />
-          <Route
-            path="/products/skyz-service/reports-and-dashboards/"
-            element={<ReportsAndDashboardsService />}
-          />
-          <Route
-            path="/products/skyz-service/share-calendars/"
-            element={<ShareCalendars />}
-          />
-          <Route
-            path="/products/skyz-service/sharing-knowledge/"
-            element={<SharingKnowledge />}
-          />
-          <Route
-            path="/products/skyz-service/skyz-service-cloud/"
-            element={<SkyzServiceCloud />}
-          />
-          <Route
-            path="/products/skyz-service/skyz-service-mobile/"
-            element={<SkyzServiceMobile />}
-          />
-          <Route
-            path="/products/skyz-service/service-level-agreement-sla/"
-            element={<SLA />}
-          />
-          <Route
-            path="/products/skyz-service/social-customer-service/"
-            element={<SocialCustomerService />}
-          />
-          <Route
-            path="/products/skyz-service/tasks-management/"
-            element={<TasksManagement />}
-          />
-        </Routes>
-        <Footer />
+            {/* Service */}
+            <Route
+              path="/products/skyz-service/service/"
+              element={<Service />}
+            />
+            <Route
+              path="/products/skyz-service/customer-service-calls-mgmt/"
+              element={<CustomerServiceCallsMgmt />}
+            />
+            <Route
+              path="/products/skyz-service/customer-service-control/"
+              element={<CustomerServiceControl />}
+            />
+            <Route
+              path="/products/skyz-service/customer-service-events-mgmt/"
+              element={<CustomerServiceEventsMgmt />}
+            />
+            <Route
+              path="/products/skyz-service/customer-service-information-mgmt/"
+              element={<CustomerServiceInformationMgmt />}
+            />
+            <Route
+              path="/products/skyz-service/customer-service-performance-mgmt/"
+              element={<CustomerServicePerformanceMgmt />}
+            />
+            <Route
+              path="/products/skyz-service/customer-service-workflow/"
+              element={<CustomerServiceWorkflow />}
+            />
+            <Route
+              path="/products/skyz-service/email-integration/"
+              element={<EmailIntegrationService />}
+            />
+            <Route
+              path="/products/skyz-service/field-based-service-mgmt/"
+              element={<FieldBasedServiceMgmt />}
+            />
+            <Route
+              path="/products/skyz-service/reports-and-dashboards/"
+              element={<ReportsAndDashboardsService />}
+            />
+            <Route
+              path="/products/skyz-service/share-calendars/"
+              element={<ShareCalendars />}
+            />
+            <Route
+              path="/products/skyz-service/sharing-knowledge/"
+              element={<SharingKnowledge />}
+            />
+            <Route
+              path="/products/skyz-service/skyz-service-cloud/"
+              element={<SkyzServiceCloud />}
+            />
+            <Route
+              path="/products/skyz-service/skyz-service-mobile/"
+              element={<SkyzServiceMobile />}
+            />
+            <Route
+              path="/products/skyz-service/service-level-agreement-sla/"
+              element={<SLA />}
+            />
+            <Route
+              path="/products/skyz-service/social-customer-service/"
+              element={<SocialCustomerService />}
+            />
+            <Route
+              path="/products/skyz-service/tasks-management/"
+              element={<TasksManagement />}
+            />
+          </Routes>
+          <Footer />
+        </div>
       </Router>
     </div>
   );
