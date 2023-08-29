@@ -3,8 +3,6 @@
   overflow-y: auto;
   text-overflow: ellipsis;
   width: 100%;
-  // max-width: 1100px;
-  // min-width: none;
 }
 
 .fl-table {
@@ -121,9 +119,9 @@ tr:hover {
 }
 .td-menu {
   width: 20px;
-  // @media screen and (max-width: 970px) {
-  //   width: auto;
-  // }
+  @media screen and (max-width: 970px) {
+    width: auto;
+  }
 }
 
 .td-bold {
@@ -189,7 +187,7 @@ tr > td:first-child {
   overflow: hidden;
   flex-wrap: wrap;
   span:first-child {
-    font-weight: font-weight(font-weight-bold);
+    font-weight: bold;
   }
 }
 

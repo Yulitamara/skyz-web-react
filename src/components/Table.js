@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/scss/_table.scss";
 
 const Table = () => {
   return (
@@ -7,8 +8,8 @@ const Table = () => {
         <thead>
           <tr>
             <th>
-              <div class="td-bold">
-                <span class="material-symbols-outlined">category</span>
+              <div className="td-bold">
+                <span className="material-symbols-outlined">category</span>
               </div>
             </th>
             <th>Category</th>

@@ -1,6 +1,5 @@
 import "../assets/scss/_skyz-demo.scss";
 import personImge from "../assets/imgs/person.jpg";
-// import Table from "./Table";
 import { useState } from "react";
 import Table from "./Table";
 
@@ -18,6 +17,12 @@ const Demo = () => {
     setOpenBox(boxKey);
   };
 
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const handleToggleSidebarDemo = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   return (
     <div className="skyz-demo">
       <h1>
@@ -31,9 +36,14 @@ const Demo = () => {
       <div className="demo-container">
         <div className="skyz-demo__navbar">
           <div className="navbar__menu">
-            <span className="material-symbols-outlined side-toggle">menu</span>
-            <div class="navbar__menu--logo">
-              <span class="material-symbols-outlined">home</span>
+            <span
+              className="material-symbols-outlined demo-side-toggle-"
+              onClick={handleToggleSidebarDemo}
+            >
+              menu
+            </span>
+            <div className="navbar__menu--logo">
+              <span className="material-symbols-outlined">home</span>
               <div>
                 Skyz<span>CRM</span>
               </div>
@@ -43,7 +53,7 @@ const Demo = () => {
             <div className="navbar__search--input-container">
               <input
                 type="text"
-                class="input"
+                className="input"
                 placeholder="Search..."
                 id="searchInput"
               />
@@ -83,7 +93,7 @@ const Demo = () => {
         <div className="navbar__overlay"></div>
 
         <div className="new-container">
-          <div className="skyz-demo__sidebar">
+          <div className={`skyz-demo__sidebar ${sidebarOpen ? "open" : ""}`}>
             <div className="sidebar__content">
               <ul className="sidebar__content--list">
                 <li className="create-item">
@@ -182,7 +192,7 @@ const Demo = () => {
                         </div>
                         <div className="card__boxes--box__header--btns">
                           <span
-                            class="material-symbols-outlined"
+                            className="material-symbols-outlined"
                             onClick={() => openBoxHandler("connections")}
                           >
                             expand_more
@@ -213,7 +223,7 @@ const Demo = () => {
                         </div>
                         <div className="card__boxes--box__header--btns">
                           <span
-                            class="material-symbols-outlined"
+                            className="material-symbols-outlined"
                             onClick={() => openBoxHandler("communication")}
                           >
                             expand_more
@@ -239,7 +249,7 @@ const Demo = () => {
                           <span>Addresses</span>
                         </div>
                         <div className="card__boxes--box__header--btns">
-                          <span class="material-symbols-outlined">
+                          <span className="material-symbols-outlined">
                             expand_more
                           </span>
                         </div>
@@ -263,7 +273,7 @@ const Demo = () => {
                           <span>More Info</span>
                         </div>
                         <div className="card__boxes--box__header--btns">
-                          <span class="material-symbols-outlined">
+                          <span className="material-symbols-outlined">
                             expand_more
                           </span>
                         </div>
@@ -334,7 +344,7 @@ const Demo = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="card__open-boxes--box__content">
+                      <div className="card__open-boxes--box__content">
                         <Table />
                       </div>
                     </div>
@@ -391,7 +401,7 @@ const Demo = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="card__open-boxes--box__content">
+                      <div className="card__open-boxes--box__content">
                         <Table />
                       </div>
                     </div>

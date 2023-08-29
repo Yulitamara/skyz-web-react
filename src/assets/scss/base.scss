@@ -11,11 +11,11 @@
 @import "./contact";
 @import "./privacy-policy";
 @import "./product";
-@import "./skyz-demo";
-@import "./phone-demo";
+// @import "./skyz-demo";
+// @import "./phone-demo";
 @import "./get-started";
-@import "./filters";
-@import "./table";
+// @import "./filters";
+// @import "./table";
 
 *,
 *::before,
@@ -265,7 +265,7 @@ textarea {
   font-weight: 500;
   border: 2px solid $blue;
   color: $blue;
-  border-radius: 20px;
+  border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   padding: 16px 48px;
@@ -283,7 +283,7 @@ textarea {
   font-size: 18px;
 
   border: none;
-  border-radius: 20px;
+  border-radius: 1rem;
   cursor: pointer;
   color: #ffffff;
   background-color: $blue;
@@ -304,7 +304,7 @@ textarea {
   font-size: calc(1.2rem + 0.4vw);
   padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
   border: none;
-  border-radius: 10px;
+  border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

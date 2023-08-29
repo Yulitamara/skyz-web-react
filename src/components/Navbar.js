@@ -3,6 +3,10 @@ import logo from "../assets/imgs/Skyz-logo.png";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
+import i18next from "i18next";
+
+import { useTranslation } from "react-i18next";
+
 const navLinks = [
   {
     title: "Home",
@@ -25,6 +29,11 @@ const navLinks = [
     path: "/contact",
   },
 ];
+
+const lngs = {
+  en: { nativeName: "English" },
+  he: { nativeName: "Hebrew" },
+};
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -51,6 +60,8 @@ const Navbar = () => {
     setMenuActive(false);
   };
 
+  const { i18n } = useTranslation();
+
   return (
     <header className="navbar" ref={navbarRef}>
       <Link to="/">
@@ -70,12 +81,20 @@ const Navbar = () => {
         {/* <span className="material-symbols-outlined darkmode-toggle">
           dark_mode
         </span> */}
-        {/* <div className="lang">
-          <span className="link">
-            <b>He</b>
-          </span>
-          <span className="link">En</span>
-        </div> */}
+        <div className="lang">
+          {/* <span className="link">He</span>
+          <span className="link">En</span> */}
+          {Object.keys(lngs).map((lng) => (
+            <button
+              type="submit"
+              key={lng}
+              onClick={() => i18next.changeLanguage(lng)}
+              disabled={i18n.resolvedLanguage === lng}
+            >
+              {lngs[lng].nativeName}
+            </button>
+          ))}
+        </div>
       </div>
       <span
         className="material-symbols-outlined menu-icon"

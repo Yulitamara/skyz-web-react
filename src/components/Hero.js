@@ -2,17 +2,20 @@ import { Link } from "react-router-dom";
 import "../assets/scss/_hero.scss";
 import "../assets/scss/base.scss";
 // import heroImg from "../assets/imgs/hero-img.svg";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="hero">
       <h1>
         Skyz<span>CRM</span>
       </h1>
       <p>
-        Manage customers in real time at a glance <span className="dot"></span>
+        {t("manage")}
+        <span className="dot"></span>
       </p>
-      <div class="btns-container">
+      <div className="btns-container">
         <Link to="/contact" className="btn-secondary">
           Get Started
         </Link>

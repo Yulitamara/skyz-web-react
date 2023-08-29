@@ -59,7 +59,7 @@ const CardBox = () => {
               <span>{box.title}</span>
             </div>
             <div className="card__boxes--box__header--btns">
-              <span class="material-symbols-outlined">expand_more</span>
+              <span className="material-symbols-outlined">expand_more</span>
             </div>
           </div>
           <div className="card__boxes--box__content">

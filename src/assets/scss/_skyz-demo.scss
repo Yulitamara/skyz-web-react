@@ -38,7 +38,7 @@
         display: flex;
         align-items: center;
         gap: 4rem;
-        .side-toggle {
+        .demo-side-toggle {
           cursor: pointer;
           display: none;
           span {
@@ -193,9 +193,10 @@
         }
       }
 
-      .active-sidebar {
-        display: block;
+      .open {
+        left: 0;
       }
+
       ul {
         list-style: none;
       }
@@ -439,9 +440,15 @@
         }
       }
       .new-container {
+        position: relative;
+
         .skyz-demo__sidebar {
-          display: none;
+          position: absolute;
+          background-color: #eff6ff;
+          height: 100%;
+          left: -280px;
         }
+
         .skyz-demo__main {
           .card-container {
             padding: 0rem;
@@ -466,4 +473,7 @@
       }
     }
   }
+}
+.open {
+  left: 0;
 }
