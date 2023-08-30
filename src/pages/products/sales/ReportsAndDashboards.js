@@ -1,39 +1,28 @@
 import img1 from "../../../assets/imgs/sales/Reports-Dashboards-1-600x395.png";
 import SalesGetStarted from "../../../components/SalesGetStarted";
-
-const paraData = [
-  {
-    id: 1,
-    title: "Receive reports and graphs automatically for every business process",
-    content: "SkyzCRM lets you view innovative reports—it’s much more than a centralized dashboard! Get relevant reports, charts, and graphs that let you gain insights in real time and make quicker decisions.",
-  },
-  {
-    id: 2,
-    title: "Draw accurate conclusions using dashboards tailored to your needs",
-    content: "You can match dashboards to your requirements with SkyzCRM. Get great flexibility when it comes to producing reports, charts, and graphs according to your product and organizational needs. Draw conclusions that are right for your business selling processes while maximizing efficiency.",
-  },
-  {
-    id: 3,
-    title: "Get decision-making reports both at home and in the field",
-    content: "Reports, charts, and graphs are available on your tablet and smartphone in real-time. SkyzCRM presents data in an impressive way anywhere: in the office, at home, in the field abroad. There is no better way to impress a client than by pulling out a sharp looking relevant report or graph during negotiations.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const ReportsAndDashboards = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="product-page-container">
         <div className="product-section-container">
           <div className="right">
-            <h1>Reports & Dashboards</h1>
-            {paraData.map((para) => {
-              return (
-                <div className="para" key={para.id}>
-                  <h2>{para.title}</h2>
-                  <p>{para.content}</p>
-                </div>
-              );
-            })}
+            <h1>{t("reports-and-dashboards-title")}</h1>
+            <div className="para">
+              <h2>{t("reports-and-dashboards-t-1")}</h2>
+              <p>{t("reports-and-dashboards-p-1")}</p>
+            </div>
+            <div className="para">
+              <h2>{t("reports-and-dashboards-t-2")}</h2>
+              <p>{t("reports-and-dashboards-p-2")}</p>
+            </div>
+            <div className="para">
+              <h2>{t("reports-and-dashboards-t-3")}</h2>
+              <p>{t("reports-and-dashboards-p-3")}</p>
+            </div>
           </div>
           <div className="left">
             <img
