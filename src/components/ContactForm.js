@@ -73,7 +73,7 @@ export const ContactForm = () => {
       onSubmit={sendEmail}
       id="contact-form"
     >
-      <h2>{t("contactFormHeader")}</h2>
+      <h2>{t("contact-form-header")}</h2>
       <div className="fields">
         <div className="field-container">
           <div className="label-container">
@@ -83,7 +83,7 @@ export const ContactForm = () => {
             <input
               type="text"
               className="input"
-              placeholder={t("contactFormName")}
+              placeholder={t("contact-form-name")}
               required
               name="user_name"
             />
@@ -98,7 +98,7 @@ export const ContactForm = () => {
               type="text"
               className="input"
               required
-              placeholder={t("contactFormEmail")}
+              placeholder={t("contact-form-email")}
               name="user_email"
               id="contact-email"
             />
@@ -113,7 +113,7 @@ export const ContactForm = () => {
               type="number"
               className="input"
               required
-              placeholder={t("contactFormPhone")}
+              placeholder={t("contact-form-phone")}
               id="contact-phone"
               name="phone"
             />
@@ -129,21 +129,21 @@ export const ContactForm = () => {
             <input
               type="text"
               className="input"
-              placeholder={t("contactFormOrganization")}
+              placeholder={t("contact-form-organization")}
               name="organization"
               id="contact-organization"
             />
           </div>
         </div>
         <div className="textarea">
-          <label className="title">{t("contactFormMessage")}</label>
+          <label className="title">{t("contact-form-message")}</label>
           <textarea name="message" id="message" className="input"></textarea>
         </div>
         <p className="contact__error" id="contact-error"></p>
       </div>
       <input
         type="submit"
-        value={t("sendBtn")}
+        value={t("send-btn")}
         className="btn btn-orange"
         onSubmit={sendEmail}
       />

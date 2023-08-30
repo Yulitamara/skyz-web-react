@@ -12,7 +12,7 @@
     }
     p {
       color: white;
-      text-align: left;
+      text-align: start;
     }
   }
   .right {
@@ -38,10 +38,10 @@
 }
 
 .green-bg {
-  background-color: #388E3C;
+  background-color: #388e3c;
 }
 .btn.green-text {
-  color: #388E3C !important;
+  color: #388e3c !important;
 }
 @media screen and (max-width: 800px) {
   .get-started {

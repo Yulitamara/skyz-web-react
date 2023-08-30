@@ -17,13 +17,13 @@ const Hero = () => {
       </p>
       <div className="btns-container">
         <Link to="/contact" className="btn-secondary">
-          {t("startBtn")}
+          {t("start-btn")}
         </Link>
         <Link
           to="https://crm-erp.co.il/planc2/logon/?lang=102"
           className="btn-primary"
         >
-          {t("loginBtn")}
+          {t("login-btn")}
         </Link>
       </div>
       {/* <img src={heroImg} alt="hero-img" className="hero-img" /> */}

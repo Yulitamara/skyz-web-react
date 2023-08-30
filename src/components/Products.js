@@ -13,31 +13,31 @@ const Products = () => {
       <div className="product">
         <div className="header">
           <img src={sales} alt="sales img" />
-          <h2>{t("salesHeader")}</h2>
+          <h2>{t("sales-header")}</h2>
         </div>
-        <p>{t("salesContent")}</p>
+        <p>{t("sales-content")}</p>
         <Link to="/products/skyz-sales/sales/">
-          <button className="btn-orange">{t("learnMore")}</button>
+          <button className="btn-orange">{t("learn-more")}</button>
         </Link>
       </div>
       <div className="product">
         <div className="header">
           <img src={marketing} alt="marketing img" />
-          <h2>{t("marketingHeader")}</h2>
+          <h2>{t("marketing-header")}</h2>
         </div>
-        <p>{t("marketingContent")}</p>
+        <p>{t("marketing-content")}</p>
         <Link to="/products/skyz-marketing/marketing/">
-          <button className="btn-orange">{t("learnMore")}</button>
+          <button className="btn-orange">{t("learn-more")}</button>
         </Link>
       </div>
       <div className="product">
         <div className="header">
           <img src={service} alt="service img" />
-          <h2>{t("serviceHeader")}</h2>
+          <h2>{t("service-header")}</h2>
         </div>
-        <p>{t("serviceContent")}</p>
+        <p>{t("service-content")}</p>
         <Link to="/products/skyz-service/service/">
-          <button className="btn-orange">{t("learnMore")}</button>
+          <button className="btn-orange">{t("learn-more")}</button>
         </Link>
       </div>
     </section>

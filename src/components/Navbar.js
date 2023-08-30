@@ -48,20 +48,20 @@ const Navbar = () => {
       </Link>
       <div className={`links ${menuActive && "active"}`}>
         <Link to="/" className="link" onClick={handleMenuItemClick}>
-          {t("navHome")}
+          {t("nav-home")}
         </Link>
         <Link to="/about" className="link" onClick={handleMenuItemClick}>
-          {t("navAbout")}
+          {t("nav-about")}
         </Link>
         <Link
           to="https://crm-erp.co.il/planc2/logon/?lang=102"
           className="link"
           onClick={handleMenuItemClick}
         >
-          {t("navLogin")}
+          {t("nav-login")}
         </Link>
         <Link to="/contact" className="link" onClick={handleMenuItemClick}>
-          {t("navContact")}
+          {t("nav-contact")}
         </Link>
         <span className="material-symbols-outlined darkmode-toggle">
           dark_mode

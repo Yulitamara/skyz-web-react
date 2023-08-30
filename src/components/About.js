@@ -6,8 +6,8 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <section className="about">
-      <h2>{t("aboutHeader")}</h2>
-      <p>{t("aboutContent")}</p>
+      <h2>{t("about-header")}</h2>
+      <p>{t("about-content")}</p>
     </section>
   );
 };

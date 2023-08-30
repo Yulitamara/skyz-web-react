@@ -9,9 +9,9 @@ const Contact = () => {
     <section className="contact">
       <div className="content">
         <div className="info">
-          <h2>{t("contactHeader")}</h2>
+          <h2>{t("contact-header")}</h2>
           <p>
-            {t("contactTimes")}
+            {t("contact-times")}
           </p>
           <div className="info-details">
             <div className="detail">
@@ -24,7 +24,7 @@ const Contact = () => {
                 </span>
               </Link>
               <p>
-                {t("contactLocation")}
+                {t("contact-location")}
                 
               </p>
             </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                 call
               </span>
               <p>
-                {t("contactPhone")}
+                {t("contact-phone")}
               </p>
             </div>
           </div>
