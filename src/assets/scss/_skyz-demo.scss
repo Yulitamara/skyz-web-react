@@ -3,7 +3,7 @@
 .skyz-demo {
   grid-column: container-start / container-end;
   padding: 10vh 10vw;
-  background-color: $background;
+  background-color: var(--background);
 
   h1 {
     text-align: center;

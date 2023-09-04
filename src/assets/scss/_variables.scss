@@ -1,12 +1,29 @@
-$text-link: #2b74ba;
-$text-color: #2b2b4f;
-$white: #fff;
-$background: #eff6ff;
-$border: #ccc;
-$blue: #6160ff;
-$blue-hover: #5151d5;
-$light-gray: #f0f3f5;
-$text-color-on-light-gray: #546a78;
-$orange: #ffaf62;
-$orange-hover: #ff952f;
-$text-color-on-orange: #052e48;
+:root {
+  --text-link: #2b74ba;
+  --text-color: #2b2b4f;
+  --white: #fff;
+  --background: #eff6ff;
+  --border: #ccc;
+  --blue: #6160ff;
+  --blue-hover: #5151d5;
+  --light-gray: #f0f3f5;
+  --text-color-on-light-gray: #546a78;
+  --orange: #ffaf62;
+  --orange-hover: #ff952f;
+  --text-color-on-orange: #052e48;
+}
+
+.dark-mode {
+  --text-link: #2b74ba;
+  --text-color: #fff;
+  --white: #121212;
+  --background: #20252d;
+  --border: #ccc;
+  --blue: #6160ff;
+  --blue-hover: #5151d5;
+  --light-gray: #f0f3f5;
+  --text-color-on-light-gray: #546a78;
+  --orange: #ffaf62;
+  --orange-hover: #ff952f;
+  --text-color-on-orange: #052e48;
+}

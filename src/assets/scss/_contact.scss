@@ -14,7 +14,7 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    color: $text-color;
+    color: var(--text-color);
     gap: 4rem;
     // filter: drop-shadow(0px 8px 24px rgba(144, 188, 230, 0.5));
 
@@ -54,8 +54,8 @@
     }
 
     .form {
-      background-color: $light-gray;
-      color: $text-color-on-light-gray;
+      background-color:var(--light-gray);
+      color: var(--text-color-on-light-gray);
       border-radius: 30px;
       padding: 2rem;
       min-width: 400px;

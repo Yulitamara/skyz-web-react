@@ -68,13 +68,13 @@ html body {
 a {
   text-decoration: none;
   font-size: 16px;
-  color: $text-color;
+  color: var(--text-color);
 }
 
 h1 {
   font-size: 33px;
   font-weight: 300;
-  color: $text-color;
+  color: var(--text-color);
 }
 
 h2 {
@@ -102,7 +102,7 @@ textarea {
 }
 
 .active {
-  display: none !important;
+  display: none;
 }
 
 .small-chip {
@@ -154,7 +154,7 @@ textarea {
   gap: 15px;
   flex-wrap: wrap;
 }
-.darkmode-toggle button {
+.darkmode-toggle {
   background-color: transparent;
   border: none 0;
   border-radius: 50%;
@@ -271,8 +271,8 @@ textarea {
 .btn-primary {
   font-size: 18px;
   font-weight: 500;
-  border: 2px solid $blue;
-  color: $blue;
+  border: 2px solid var(--blue);
+  color: var(--blue);
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -294,7 +294,7 @@ textarea {
   border-radius: 1rem;
   cursor: pointer;
   color: #ffffff;
-  background-color: $blue;
+  background-color: var(--blue);
   transition: all 0.3s ease-in-out;
   padding: 16px 48px;
 
@@ -303,12 +303,12 @@ textarea {
   }
 }
 .btn-secondary:hover {
-  background-color: $blue-hover;
+  background-color: var(--blue-hover);
 }
 
 .btn-orange {
-  background-color: $orange;
-  color: $text-color-on-orange;
+  background-color: var(--orange);
+  color: var(--text-color-on-orange);
   font-size: calc(1.2rem + 0.4vw);
   padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
   border: none;
@@ -317,5 +317,5 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 .btn-orange:hover {
-  background-color: $orange-hover;
+  background-color: var(--orange-hover);
 }

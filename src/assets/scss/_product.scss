@@ -3,7 +3,7 @@
 .product-page-container {
   grid-column: container-start / container-end;
   padding: 5vh 0;
-  background-color: #fff;
+  background-color:var(--white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,14 +43,14 @@
     font-weight: 400;
   }
   p {
-    color: $text-color;
+    color: var(--text-color);
     text-align: start;
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 0.5rem;
   }
   .link {
-    color: $blue;
+    color: var(--blue);
     cursor: pointer;
     background-color: transparent;
     font-weight: 600;
@@ -58,7 +58,7 @@
     transition: all 0.2s ease-in-out;
   }
   .link:hover {
-    color: $blue-hover;
+    color: var(--blue-hover);
   }
 }
 

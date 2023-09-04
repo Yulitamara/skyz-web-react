@@ -6,7 +6,6 @@ import { useState, useEffect, useRef } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
-
 const lngs = {
   en: { nativeName: "En" },
   he: {
@@ -14,7 +13,7 @@ const lngs = {
   },
 };
 
-const Navbar = () => {
+const Navbar = ({ onToggleDarkMode, darkMode }) => {
   const [menuActive, setMenuActive] = useState(false);
   const navbarRef = useRef(null);
 
@@ -63,8 +62,11 @@ const Navbar = () => {
         <Link to="/contact" className="link" onClick={handleMenuItemClick}>
           {t("nav-contact")}
         </Link>
-        <span className="material-symbols-outlined darkmode-toggle">
-          dark_mode
+        <span
+          className="material-symbols-outlined darkmode-toggle"
+          onClick={onToggleDarkMode}
+        >
+          {darkMode ? "light_mode" : "dark_mode"}
         </span>
         <div className="lang">
           {Object.keys(lngs).map((lng) => (

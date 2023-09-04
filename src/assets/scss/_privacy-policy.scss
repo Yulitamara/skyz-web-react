@@ -1,7 +1,7 @@
 .privacy {
   grid-column: container-start / container-end;
   padding: 10rem 8vw 10rem 8vw;
-  background-color: #fff;
+  background-color: var(--white);
 
   line-height: 2.2;
   &__title {

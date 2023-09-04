@@ -2,7 +2,7 @@
 
 .about-us {
   grid-column: container-start / container-end;
-  color: $text-color;
+  color: var(--text-color);
   background-color: #fff;
   padding: 20vh 4vw 10vh 4vw;
   .about-us__title {

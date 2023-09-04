@@ -7,9 +7,9 @@
   flex-direction: column;
   justify-content: center;
   padding: 14rem 4vw 8rem 4vw;
-  background-color: $background;
+  background-color: var(--background);
   min-height: 90vh;
-  color: $text-color;
+  color: var(--text-color);
 
   h1 {
     font-size: 7rem;
@@ -28,7 +28,7 @@
   }
 
   p .dot {
-    background-color: $blue;
+    background-color: var(--blue);
     width: 9px;
     height: 9px;
     margin-top: 5px;

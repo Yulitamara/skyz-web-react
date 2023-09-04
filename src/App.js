@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -80,11 +81,17 @@ function App() {
     // Add other styles as needed
   };
 
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
       <Router>
         <ScrollToTop />
-        <Navbar />
+        <Navbar onToggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <div className="language-container" style={containerStyles}>
           <Routes>
             <Route path="/" element={<Home />} />
