@@ -5,10 +5,10 @@
   height: 8rem;
   line-height: 7rem;
   position: fixed;
-  max-width: 1700px;
+  max-width: 2000px;
   padding: 0 3rem;
-  background-color: var(--white);
-
+  background-color: var(--background-light);
+  border-bottom: var(--text-color) solid 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,6 +43,16 @@
     .lang {
       display: flex;
       gap: 1rem;
+      button {
+        color: var(--text-color);
+      }
+      button.disabled {
+        color: var(--text-color);
+        opacity: 50%;
+      }
+    }
+    .darkmode-toggle {
+      color: var(--text-color);
     }
   }
 }
@@ -52,7 +62,7 @@
     .links {
       width: 300px;
       height: 100vh;
-      background-color: #f0f3f5;
+      background-color: var(--background-light);
       position: absolute;
       top: 8rem;
       left: -500px;

@@ -3,7 +3,7 @@
 .about-us {
   grid-column: container-start / container-end;
   color: var(--text-color);
-  background-color: #fff;
+  background-color: var(--background-light);
   padding: 20vh 4vw 10vh 4vw;
   .about-us__title {
     margin-bottom: 1rem;

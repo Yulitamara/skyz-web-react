@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   padding: 10rem 4vw;
-  background-color: #fff;
+  background-color: var(--background-light);
 
   .content {
     border-radius: 10px;
@@ -54,8 +54,8 @@
     }
 
     .form {
-      background-color:var(--light-gray);
-      color: var(--text-color-on-light-gray);
+      background-color: var(--background);
+      color: var(--text-color);
       border-radius: 30px;
       padding: 2rem;
       min-width: 400px;

@@ -71,7 +71,9 @@ const Navbar = ({ onToggleDarkMode, darkMode }) => {
         <div className="lang">
           {Object.keys(lngs).map((lng) => (
             <button
-              className="lang-btn"
+              className={`lang-btn ${
+                i18n.resolvedLanguage === lng ? "disabled" : ""
+              }`}
               type="submit"
               key={lng}
               onClick={() => i18next.changeLanguage(lng)}

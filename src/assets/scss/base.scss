@@ -35,7 +35,7 @@ html body {
   line-height: 1.6;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: rgb(231, 231, 231);
+  background-color: var(--background-light);
 }
 .language-container {
   grid-column: container-start / container-end;
@@ -82,6 +82,7 @@ h2 {
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.1rem;
+  color: var(--text-color);
 }
 h3 {
   font-size: 19px;
@@ -91,11 +92,12 @@ h3 {
 p {
   font-size: calc(1.5rem + 0.4vw);
   text-align: center;
+  color: var(--text-color);
 }
 
 textarea {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .material-symbols-outlined {
@@ -244,7 +246,7 @@ textarea {
 }
 
 .App {
-  max-width: 1700px;
+  max-width: 2000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns:
@@ -294,7 +296,7 @@ textarea {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--background);
   background-color: var(--blue);
   transition: all 0.3s ease-in-out;
   padding: 16px 48px;
@@ -308,8 +310,8 @@ textarea {
 }
 
 .btn-orange {
-  background-color: var(--orange);
-  color: var(--text-color-on-orange);
+  background-color: var(--secondary);
+  color: var(--text-color-on-secondary);
   font-size: calc(1.2rem + 0.4vw);
   padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
   border: none;
@@ -318,5 +320,5 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 .btn-orange:hover {
-  background-color: var(--orange-hover);
+  background-color: var(--secondary-hover);
 }
