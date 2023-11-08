@@ -1,7 +1,7 @@
 .advantages {
   grid-column: container-start/container-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 2rem;
   place-content: center;
   padding: 1vh 4vw 6vh 4vw;
@@ -21,9 +21,8 @@
       font-size: 23px;
     }
     p {
-      text-align: start;
       font-size: 19px;
-      width: 260px;
+      //   height: 140px;
     }
     .icon-container {
       background-color: var(--light-gray);
