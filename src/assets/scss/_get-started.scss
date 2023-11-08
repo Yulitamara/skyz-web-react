@@ -1,5 +1,5 @@
 .get-started {
-  background-color: #534096;
+  background-color: var(--pink);
   display: flex;
   margin: 5rem 4rem 0 4rem;
   align-items: center;
@@ -8,10 +8,10 @@
   .left {
     flex: 3;
     h1 {
-      color: white;
+      color: var(--text-color);
     }
     p {
-      color: white;
+      color: var(--text-color);
       text-align: start;
     }
   }
@@ -19,8 +19,8 @@
     flex: 1;
     .btn {
       border-radius: 20px;
-      background-color: white;
-      color: #534096;
+      background-color: var(--on-pink);
+      color: var(--pink);
       font-size: calc(1.2rem + 0.4vw);
       padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
       border: none;
@@ -31,17 +31,19 @@
   }
 }
 .red-bg {
-  background-color: #d33034;
+  background-color: var(--red);
 }
 .btn.red-text {
-  color: #d33034 !important;
+  color: var(--red) !important;
+  background-color: var(--on-red) !important;
 }
 
 .green-bg {
-  background-color: #388e3c;
+  background-color: var(--green);
 }
 .btn.green-text {
-  color: #388e3c !important;
+  color: var(--green) !important;
+  background-color: var(--on-green) !important;
 }
 @media screen and (max-width: 800px) {
   .get-started {
