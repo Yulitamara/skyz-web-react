@@ -3,7 +3,7 @@
 .product-page-container {
   grid-column: container-start / container-end;
   padding: 5vh 0;
-  background-color:var(--white);
+  background-color: var(--white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,9 +24,9 @@
   }
   .product-section-container.row-reverse {
     flex-direction: row-reverse;
-    .right {
-      margin-left: 0px;
-    }
+    // .right {
+    //   margin-left: 0px;
+    // }
     .left {
       margin: 0 100px;
       img {
