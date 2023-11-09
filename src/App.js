@@ -94,7 +94,7 @@ function App() {
         <Navbar onToggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <div className="language-container" style={containerStyles}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home darkMode={darkMode} />} />
             <Route path="/about" element={<AboutUs />} />
             {/* <Route path="/blogs" element={<Blogs />} /> */}
             {/* <Route path="/login" element={<Login />} /> */}

@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Products = ({ darkMode }) => {
+  console.log("Dark Mode:", darkMode);
+
   const salesImg = darkMode ? salesDark : salesLight;
   const marketingImg = darkMode ? marketingDark : marketingLight;
   const serviceImg = darkMode ? serviceDark : serviceLight;

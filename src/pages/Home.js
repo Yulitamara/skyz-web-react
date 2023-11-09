@@ -5,7 +5,7 @@ import Products from "../components/Products";
 import Advantages from "../components/Advantages";
 // import Demo from "../components/Demo";
 
-const Home = () => {
+const Home = ({ darkMode }) => {
   return (
     <>
       <Helmet>
@@ -19,7 +19,7 @@ const Home = () => {
       <Hero />
       {/* <Demo /> */}
       <About />
-      <Products />
+      <Products darkMode={darkMode} />
       <Advantages />
     </>
   );
